@@ -65,6 +65,10 @@
 		}
 	},
 	{
+		"id": "aground",
+		"name": "Aground"
+	},
+	{
 		"id": "ahatintime",
 		"oldId": "ahatintime",
 		"name": "A Hat in Time"
@@ -83,6 +87,19 @@
 		"id": "airportceo",
 		"name": "Airport CEO",
 		"official": true
+	},
+	{
+		"id": "albion",
+		"oldId": "albionworld",
+		"name": "Albion"
+	},
+	{
+		"id": "alekon",
+		"name": "Alekon"
+	},
+	{
+		"id": "altverz",
+		"name": "Alternate UniverZ"
 	},
 	{
 		"id": "andromedamod",
@@ -130,6 +147,10 @@
 	{
 		"id": "aground",
 		"name": "Aground"
+	},
+	{
+		"id": "airbornekingdom",
+		"name": "Airborne Kingdom"
 	},
 	{
 		"id": "apexracer",
@@ -324,6 +345,10 @@
 		}
 	},
 	{
+		"id": "cbs",
+		"name": "CBS"
+	},
+	{
 		"id": "cladecraft",
 		"name": "CladeCraft"
 	},
@@ -435,6 +460,11 @@
 		"name": "Dead Ahead"
 	},
 	{
+		"id": "deadbydaylight",
+		"name": "Dead by Daylight",
+		"official": true
+	},
+	{
 		"id": "deadcells",
 		"name": "Dead Cells",
 		"official": true
@@ -477,6 +507,10 @@
 		"id": "dicefolk",
 		"name": "Dicefolk",
 		"official": true
+	},
+	{
+		"id": "disfigure",
+		"name": "Disfigure"
 	},
 	{
 		"id": "dotage",
@@ -987,6 +1021,11 @@
 		"id": "lordofembers",
 		"oldId": "the-lord-of-embers",
 		"name": "The Lord of Embers",
+		"official": true
+	},
+	{
+		"id": "lynked",
+		"name": "Lynked",
 		"official": true
 	},
 	{
@@ -1780,6 +1819,10 @@
 		"id": "smashlegends",
 		"oldId": "smash-legends",
 		"name": "Smash Legends"
+	},
+	{
+		"id": "thespellbrigade",
+		"name": "The Spell Brigade"
 	},
 	{
 		"id": "surroundead",
