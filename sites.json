@@ -153,6 +153,10 @@
 		"name": "Airborne Kingdom"
 	},
 	{
+		"id": "animallica",
+		"name": "Animallica"
+	},
+	{
 		"id": "apexracer",
 		"name": "APEX Racer"
 	},
@@ -330,6 +334,10 @@
 		"oldId": "blight",
 		"name": "Blight Survival",
 		"official": true
+	},
+	{
+		"id": "blockstarplanet",
+		"name": "BlockStarPlanet"
 	},
 	{
 		"id": "brawlhalla",
@@ -1397,6 +1405,11 @@
 		"official": true
 	},
 	{
+		"id": "realspace4animation",
+		"oldId": "real-space-4-animation",
+		"name": "Real Space 4 Pivot Animation"
+	},
+	{
 		"id": "rebelinc",
 		"oldId": "rebel-inc",
 		"name": "Rebel Inc"
@@ -1692,6 +1705,11 @@
 		"oldId": "minecraftabnormals",
 		"name": "Team Abnormals",
 		"official": true
+	},
+	{
+		"id": "teamrun",
+		"oldId": "team-run",
+		"name": "Team Run"
 	},
 	{
 		"id": "temtem",
