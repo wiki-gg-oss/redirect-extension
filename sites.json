@@ -424,6 +424,11 @@
 		"official": true
 	},
 	{
+		"id": "craftersmc",
+		"oldId": "craftersmc-skyblock",
+		"name": "CraftersMC"
+	},
+	{
 		"id": "crossimpact",
 		"oldId": "crossimpactoffical",
 		"name": "Cross Impact",
