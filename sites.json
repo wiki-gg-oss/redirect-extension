@@ -2010,6 +2010,11 @@
 		"name": "UNBEATABLE"
 	},
 	{
+		"id": "voicesofthevoid",
+		"oldId": "votv",
+		"name": "Voices of the Void"
+	},
+	{
 		"id": "vtolvr",
 		"oldId": "vtol-vr",
 		"name": "VTOL VR",
