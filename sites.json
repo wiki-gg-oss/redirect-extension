@@ -52,6 +52,10 @@
 		"name": "13 Sentinels"
 	},
 	{
+		"id": "20xx",
+		"name": "20xx"
+	},
+	{
 		"id": "7daystodie",
 		"name": "7 Days to Die",
 		"official": true
@@ -100,6 +104,10 @@
 	{
 		"id": "altverz",
 		"name": "Alternate UniverZ"
+	},
+	{
+		"id": "amidevil",
+		"name": "AMID EVIL"
 	},
 	{
 		"id": "andromedamod",
@@ -353,6 +361,11 @@
 		}
 	},
 	{
+		"id": "caketeamtowers",
+		"oldId": "cake-team-towers",
+		"name": "Cake Team Towers"
+	},
+	{
 		"id": "cbs",
 		"name": "CBS"
 	},
@@ -467,6 +480,16 @@
 		"name": "Darkest Dungeon",
 		"official": true
 	},
+	[
+		{
+			"id": "dayr",
+			"name": "Day R Survival"
+		},
+		{
+			"parentRef": "dayr",
+			"oldId": "day-r"
+		}
+	],
 	{
 		"id": "deadahead",
 		"oldId": "dead-ahead",
@@ -972,6 +995,10 @@
 		}
 	],
 	{
+		"id": "lilium",
+		"name": "Lilium"
+	},
+	{
 		"id": "liftlands",
 		"oldId": "liftlands",
 		"name": "Liftlands"
@@ -1131,6 +1158,11 @@
 		"id": "mili",
 		"oldId": "project-mili",
 		"name": "Mili"
+	},
+	{
+		"id": "milk",
+		"oldId": "milk-games",
+		"name": "Milk Series"
 	},
 	{
 		"id": "mindhack",
@@ -1410,6 +1442,12 @@
 		"official": true
 	},
 	{
+		"id": "radiancemodding",
+		"oldId": "radiance-projects",
+		"name": "Radiance Modding",
+		"official": true
+	},
+	{
 		"id": "realspace4animation",
 		"oldId": "real-space-4-animation",
 		"name": "Real Space 4 Pivot Animation"
@@ -1482,6 +1520,11 @@
 	{
 		"id": "rogueadventure",
 		"name": "Rogue Adventure"
+	},
+	{
+		"id": "ronkamonohashi",
+		"oldId": "ron-kamonohashi-deranged-detective",
+		"name": "Ron Kamonohashi: Deranged Detective"
 	},
 	{
 		"id": "rootsofpacha",
@@ -1589,6 +1632,10 @@
 		"id": "solinvictus",
 		"oldId": "sol-invictus",
 		"name": "Sol Invictus"
+	},
+	{
+		"id": "sonny",
+		"name": "Sonny"
 	},
 	{
 		"id": "soulknightprequel",
@@ -1885,6 +1932,10 @@
 		"id": "timberborn",
 		"name": "Timberborn",
 		"official": true
+	},
+	{
+		"id": "tocr",
+		"name": "Tales of Capellus Redux"
 	},
 	{
 		"id": "tomclancy",
