@@ -323,6 +323,11 @@
 		}
 	},
 	{
+		"id": "blocknload2",
+		"oldId": "block-n-load-2",
+		"name": "Block N Load 2"
+	},
+	{
 		"id": "boomslingers",
 		"oldId": "boom-slingers",
 		"name": "Boom Slingers"
@@ -361,9 +366,38 @@
 		}
 	},
 	{
+		"id": "builderment",
+		"name": "Builderment"
+	},
+	{
 		"id": "caketeamtowers",
 		"oldId": "cake-team-towers",
 		"name": "Cake Team Towers"
+	},
+	{
+		"id": "calltobattle2",
+		"oldId": "call-to-battle-2-the-wwii-mod",
+		"name": "Call to Battle 2",
+		"official": true
+	},
+	{
+		"id": "captainforever",
+		"name": "Captain Forever",
+		"official": true
+	},
+	{
+		"id": "carrion",
+		"name": "Carrion"
+	},
+	{
+		"id": "castledoombad",
+		"oldId": "castle-doombad",
+		"name": "Castle Doombad"
+	},
+	{
+		"id": "cavesroguelike",
+		"oldId": "caves-roguelike",
+		"name": "Caves (Roguelike)"
 	},
 	{
 		"id": "cbs",
@@ -384,6 +418,11 @@
 		"name": "Changed"
 	},
 	{
+		"id": "chiki",
+		"name": "Chiki's Chase",
+		"official": true
+	},
+	{
 		"id": "chippy",
 		"name": "Chippy"
 	},
@@ -394,6 +433,15 @@
 		"search": {
 			"oldName": "Chivalry: Medieval Warfare"
 		}
+	},
+	{
+		"id": "citysmash",
+		"oldId": "city-smash",
+		"name": "City Smash"
+	},
+	{
+		"id": "colorquest",
+		"name": "Colorquest"
 	},
 	{
 		"id": "cookieclicker",
@@ -407,6 +455,12 @@
 	{
 		"id": "crowsworn",
 		"name": "Crowsworn"
+	},
+	{
+		"id": "crystalrealms",
+		"oldId": "crystal-realms",
+		"name": "Crystal Realms",
+		"official": true
 	},
 	{
 		"id": "corporateclash",
