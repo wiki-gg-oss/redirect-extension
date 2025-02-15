@@ -585,6 +585,10 @@
 		}
 	},
 	{
+		"id": "derailvalley",
+		"name": "Derail Valley"
+	},
+	{
 		"id": "dredge",
 		"name": "Dredge"
 	},
@@ -622,6 +626,10 @@
 	{
 		"id": "dragonfable",
 		"name": "DragonFable"
+	},
+	{
+		"id": "dungeondefenders",
+		"name": "Dungeon Defenders"
 	},
 	{
 		"id": "dungeonnowloading",
