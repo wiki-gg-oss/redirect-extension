@@ -585,6 +585,10 @@
 		}
 	},
 	{
+		"id": "derailvalley",
+		"name": "Derail Valley"
+	},
+	{
 		"id": "dredge",
 		"name": "Dredge"
 	},
@@ -592,6 +596,11 @@
 		"id": "deeprockgalactic",
 		"name": "Deep Rock Galactic",
 		"official": true
+	},
+	{
+		"id": "deepseahunter",
+		"name": "Deep Sea Hunter",
+		"oldId": "deep-sea-hunter"
 	},
 	{
 		"id": "dicefolk",
@@ -622,6 +631,10 @@
 	{
 		"id": "dragonfable",
 		"name": "DragonFable"
+	},
+	{
+		"id": "dungeondefenders",
+		"name": "Dungeon Defenders"
 	},
 	{
 		"id": "dungeonnowloading",
