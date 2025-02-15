@@ -598,6 +598,11 @@
 		"official": true
 	},
 	{
+		"id": "deepseahunter",
+		"name": "Deep Sea Hunter",
+		"oldId": "deep-sea-hunter"
+	},
+	{
 		"id": "dicefolk",
 		"name": "Dicefolk",
 		"official": true
