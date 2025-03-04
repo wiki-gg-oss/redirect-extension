@@ -404,6 +404,11 @@
 		"name": "CBS"
 	},
 	{
+		"id": "celestialrefresh",
+		"oldId": "celestial-refresh",
+		"name": "Celestial Refresh"
+	},
+	{
 		"id": "cladecraft",
 		"name": "CladeCraft"
 	},
@@ -881,6 +886,11 @@
 		"name": "Gnorp Apologue"
 	},
 	{
+		"id": "goatsimulator",
+		"name": "Goat Simulator",
+		"official": true
+	},
+	{
 		"id": "godofweapons",
 		"oldId": "god-of-weapons",
 		"name": "God of Weapons"
@@ -1170,6 +1180,12 @@
 		"id": "katanazero",
 		"oldId": "katana-zero",
 		"name": "Katana ZERO"
+	},
+	{
+		"id": "kletka",
+		"oldId": "kletka-enoffical",
+		"name": "KLETKA",
+		"official": true
 	},
 	{
 		"id": "knighthood",
@@ -1534,6 +1550,18 @@
 		"id": "rejuvenation",
 		"name": "Rejuvenation"
 	},
+	[
+		{
+			"id": "returntomoria",
+			"oldId": "lord-of-the-rings-return-to-moria",
+			"name": "Lord of the Rings: Return to Moria",
+			"official": true
+		},
+		{
+			"parentRef": "returntomoria",
+			"oldId": "returntomoria"
+		}
+	],
 	{
 		"id": "roboquest",
 		"name": "Roboquest"
@@ -1616,6 +1644,10 @@
 		"id": "sandsofaura",
 		"name": "Sands of Aura",
 		"official": true
+	},
+	{
+		"id": "sc2mapster",
+		"name": "SC2Mapster"
 	},
 	{
 		"id": "scrabdackle",
