@@ -127,6 +127,11 @@
 		"id": "animalcrossingpocketcamp",
 		"name": "Animal Crossing: Pocket Camp"
 	},
+	{
+		"id": "anuchard",
+		"official": true,
+		"name": "Anuchard"
+	},
 	[
 		{
 			"id": "ark",
@@ -891,6 +896,11 @@
 		"official": true
 	},
 	{
+		"id": "godstrike",
+		"name": "Godstrike",
+		"official": true
+	},
+	{
 		"id": "godofweapons",
 		"oldId": "god-of-weapons",
 		"name": "God of Weapons"
@@ -1010,6 +1020,11 @@
 		"id": "infectionfreezone",
 		"oldId": "infection-free-zone",
 		"name": "Infection Free Zone"
+	},
+	{
+		"id": "infinitywars",
+		"name": "Infinity Wars Classic",
+		"official": true
 	},
 	{
 		"id": "instarsandtime",
@@ -1367,6 +1382,11 @@
 		"name": "Mighty Party"
 	},
 	{
+		"id": "nibiru",
+		"name": "Nibiru",
+		"official": true
+	},
+	{
 		"id": "ninesols",
 		"name": "Nine Sols",
 		"search": {
@@ -1416,6 +1436,15 @@
 	{
 		"id": "omegastrikers",
 		"name": "Omega Strikers",
+		"official": true
+	},
+	{
+		"id": "originrealms",
+		"name": "Origin Realms"
+	},
+	{
+		"id": "outerverse",
+		"name": "Outerverse",
 		"official": true
 	},
 	{
@@ -1679,10 +1708,6 @@
 		}
 	],
 	{
-		"id": "originrealms",
-		"name": "Origin Realms"
-	},
-	{
 		"id": "scorn",
 		"name": "Scorn"
 	},
@@ -1698,6 +1723,11 @@
 		"id": "sheltered2",
 		"oldId": "sheltered-2",
 		"name": "Sheltered 2"
+	},
+	{
+		"id": "shipoffools",
+		"name": "Ship of Fools",
+		"official": true
 	},
 	{
 		"id": "shogunshowdown",
@@ -1735,6 +1765,11 @@
 	{
 		"id": "sonny",
 		"name": "Sonny"
+	},
+	{
+		"id": "soulframe",
+		"name": "Soulframe",
+		"official": true
 	},
 	{
 		"id": "soulknightprequel",
@@ -2160,6 +2195,11 @@
 		"name": "UNBEATABLE"
 	},
 	{
+		"id": "venaitura",
+		"name": "Venaitura",
+		"official": true
+	},
+	{
 		"id": "voicesofthevoid",
 		"oldId": "votv",
 		"name": "Voices of the Void"
@@ -2196,7 +2236,7 @@
 			"parentRef": "warcraft",
 			"oldId": "wowwiki-archive",
 			"search": {
-				"oldName": "WowWiki"
+				"oldName": "WoWWiki"
 			}
 		}
 	],
@@ -2278,6 +2318,10 @@
 	{
 		"id": "yokaiwatch",
 		"name": "Yo-kai Watch"
+	},
+	{
+		"id": "yosakoi",
+		"name": "Yosakoi"
 	},
 	{
 		"id": "zeldacraft",
