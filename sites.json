@@ -52,6 +52,11 @@
 		"name": "13 Sentinels"
 	},
 	{
+		"id": "20minutestilldawn",
+		"oldId": "20-minutes-till-dawn",
+		"name": "20 Minutes Till Dawn"
+	},
+	{
 		"id": "20xx",
 		"name": "20xx"
 	},
@@ -171,6 +176,10 @@
 		"official": true
 	},
 	{
+		"id": "aneurism",
+		"name": "ANEURISM"
+	},
+	{
 		"id": "animallica",
 		"name": "Animallica"
 	},
@@ -254,6 +263,10 @@
 		}
 	},
 	{
+		"id": "baslag",
+		"name": "Bas-Lag"
+	},
+	{
 		"id": "battlebit",
 		"oldId": "battlebit",
 		"name": "BattleBit",
@@ -302,6 +315,10 @@
 		}
 	},
 	{
+		"id": "biomesoplenty",
+		"name": "Biomes O' Plenty"
+	},
+	{
 		"id": "bitcraft",
 		"name": "BitCraft"
 	},
@@ -336,6 +353,11 @@
 		"id": "blocknload2",
 		"oldId": "block-n-load-2",
 		"name": "Block N Load 2"
+	},
+	{
+		"id": "bloobsadventureidle",
+		"oldId": "bloobs-adventure-idle",
+		"name": "Bloobs Adventure Idle"
 	},
 	{
 		"id": "boomslingers",
@@ -633,6 +655,11 @@
 		"oldId": "deep-sea-hunter"
 	},
 	{
+		"id": "denshadego",
+		"oldId": "densha-de-go",
+		"name": "Densha de Go!"
+	},
+	{
 		"id": "dicefolk",
 		"name": "Dicefolk",
 		"official": true
@@ -665,6 +692,10 @@
 	{
 		"id": "dragonmarkedfordeath",
 		"name": "Dragon Marked For Death"
+	},
+	{
+		"id": "drawastickman",
+		"name": "Draw a Stickman"
 	},
 	{
 		"id": "dungeondefenders",
@@ -743,12 +774,25 @@
 		}
 	},
 	{
+		"id": "eldenring",
+		"name": "Elden Ring"
+	},
+	{
+		"id": "eldrum",
+		"name": "Eldrum"
+	},
+	{
 		"id": "emberknights",
 		"oldId": "ember-knights-game",
 		"name": "Ember Knights",
 		"search": {
 			"oldName": "Ember Knights - Game"
 		}
+	},
+	{
+		"id": "epicbattlefantasy",
+		"name": "Epic Battle Fantasy",
+		"official": true
 	},
 	{
 		"id": "equestriaatwar",
@@ -777,6 +821,11 @@
 		"official": true
 	},
 	{
+		"id": "eternaltales",
+		"oldId": "eternal-tales",
+		"name": "Eternal Tales"
+	},
+	{
 		"id": "eternitydev",
 		"oldId": "eternitydev-games",
 		"name": "EternityDev"
@@ -785,6 +834,11 @@
 		"id": "everdreamvalley",
 		"name": "Everdream Valley",
 		"official": true
+	},
+	{
+		"id": "fallenaces",
+		"oldId": "fallen-aces",
+		"name": "Fallen Aces"
 	},
 	{
 		"id": "fantasylife",
@@ -840,11 +894,6 @@
 		}
 	],
 	{
-		"id": "epicbattlefantasy",
-		"name": "Epic Battle Fantasy",
-		"official": true
-	},
-	{
 		"id": "fieldsofmistria",
 		"oldId": "fields-of-mistria",
 		"name": "Fields of Mistria"
@@ -865,10 +914,20 @@
 		"name": "Forest Hills: The Last Year"
 	},
 	{
+		"id": "fnawfangames",
+		"oldid": "fnaw-fangames",
+		"name": "Five Nights at Wario's Fangames"
+	},
+	{
 		"id": "forgottenseas",
 		"oldId": "forgotten-seas",
 		"name": "Forgotten Seas",
 		"official": true
+	},
+	{
+		"id": "fossilsarcheology",
+		"oldId": "fossils-archeology",
+		"name": "Fossils and Archaeology"
 	},
 	{
 		"id": "fortheking",
@@ -1000,6 +1059,11 @@
 		}
 	],
 	{
+		"id": "hellokittydreamvillage",
+		"oldId": "hello-sweet-days",
+		"name": "Hello Kitty Dream Village"
+	},
+	{
 		"id": "helloneighbor",
 		"oldId": "hello-neighbor",
 		"name": "Hello Neighbor",
@@ -1031,8 +1095,20 @@
 		"name": "Hybrid Animals"
 	},
 	{
+		"id": "hyperlightbreaker",
+		"name": "Hyper Light Breaker"
+	},
+	{
+		"id": "hypnospace",
+		"name": "Hypnospace"
+	},
+	{
 		"id": "hytale",
 		"name": "Hytale"
+	},
+	{
+		"id": "icarus",
+		"name": "ICARUS"
 	},
 	{
 		"id": "idlewizard",
@@ -1087,6 +1163,10 @@
 		"official": true
 	},
 	{
+		"id": "journeytothesavageplanet",
+		"name": "Journey to the Savage Planet"
+	},
+	{
 		"id": "jurassicworld",
 		"oldId": "jurassic-world-the-mobile-game",
 		"name": "Jurassic World"
@@ -1101,6 +1181,10 @@
 		"name": "Kairosoft"
 	},
 	{
+		"id": "kairosptu",
+		"name": "Kairos Isles"
+	},
+	{
 		"id": "kalterkrieg",
 		"name": "Kalterkrieg"
 	},
@@ -1112,6 +1196,10 @@
 		"id": "kingdomcomedeliverance",
 		"oldId": "kingdom-come-deliverance",
 		"name": "Kingdom Come: Deliverance"
+	},
+	{
+		"id": "kuroshitsuji",
+		"name": "Kuroshitsuji"
 	},
 	{
 		"id": "lastorigin",
@@ -1187,6 +1275,11 @@
 		"id": "lifeinadventure",
 		"oldId": "life-in-adventure",
 		"name": "Life In Adventure"
+	},
+	{
+		"id": "lifemakeover",
+		"oldId": "life-makeover",
+		"name": "Life Makeover"
 	},
 	{
 		"id": "limbuscompany",
@@ -1405,6 +1498,11 @@
 		}
 	},
 	{
+		"id": "monsterprom",
+		"oldId": "monster-prom",
+		"name": "Monster Prom"
+	},
+	{
 		"id": "monumenta",
 		"oldId": "monumentammo",
 		"name": "Monumenta"
@@ -1413,6 +1511,15 @@
 		"id": "moonlightpeaks",
 		"oldId": "moonlightpeaks",
 		"name": "Moonlight Peaks"
+	},
+	{
+		"id": "moonkittistoneclan",
+		"oldId": "moonkittis-stoneclan",
+		"name": "Moonkitti's Stoneclan"
+	},
+	{
+		"id": "moshionline",
+		"name": "MOSHI ONLINE"
 	},
 	{
 		"id": "multiversus",
@@ -1511,6 +1618,11 @@
 		"official": true
 	},
 	{
+		"id": "onehouronelife",
+		"name": "One Hour One Life",
+		"official": true
+	},
+	{
 		"id": "originrealms",
 		"name": "Origin Realms"
 	},
@@ -1529,6 +1641,11 @@
 		"name": "Oxygen Not Included"
 	},
 	{
+		"id": "thepalebeyond",
+		"oldId": "pale-beyond",
+		"name": "The Pale Beyond"
+	},
+	{
 		"id": "paperlily",
 		"oldId": "paper-lily",
 		"name": "Paper Lily"
@@ -1542,6 +1659,11 @@
 		"id": "pathologic",
 		"name": "Pathologic",
 		"official": true
+	},
+	{
+		"id": "pathtonowhere",
+		"oldId": "path-to-nowhere",
+		"name": "Path to Nowhere"
 	},
 	{
 		"id": "palia",
@@ -1568,6 +1690,11 @@
 		"official": true
 	},
 	{
+		"id": "perilousstorytelling",
+		"oldId": "perilous-storytelling",
+		"name": "Perilous Storytelling"
+	},
+	{
 		"id": "pg3d",
 		"oldId": "pixelgun",
 		"name": "Pixel Gun 3D",
@@ -1583,6 +1710,12 @@
 		"id": "pixeltribe",
 		"oldid": "pixel-tribe",
 		"name": "Pixel Tribe"
+	},
+	{
+		"id": "pkmnseasons",
+		"oldId": "pokemon-seasons-solstice-equinox",
+		"name": "Pokémon Seasons: Solstice & Equinox",
+		"official": true
 	},
 	{
 		"id": "planetlife",
@@ -1696,6 +1829,12 @@
 		"official": true
 	},
 	{
+		"id": "ridgesidevillage",
+		"oldId": "ridgeside",
+		"name": "Ridgeside Village",
+		"official": true
+	},
+	{
 		"id": "riseofcultures",
 		"oldId": "rise-of-cultures",
 		"name": "Rise of Cultures"
@@ -1779,8 +1918,17 @@
 		"official": true
 	},
 	{
+		"id": "saszombieassault",
+		"name": "SAS: Zombie Assault"
+	},
+	{
 		"id": "sc2mapster",
 		"name": "SC2Mapster"
+	},
+	{
+		"id": "schoolgirlssimulator",
+		"oldId": "school-girls-simulator",
+		"name": "School Girls Simulator"
 	},
 	{
 		"id": "scrabdackle",
@@ -1910,6 +2058,12 @@
 		"name": "Spellrogue"
 	},
 	{
+		"id": "starfighterinfinity",
+		"oldId": "starfighter-infinity",
+		"name": "Starfighter: Infinity",
+		"official": true
+	},
+	{
 		"id": "starsector",
 		"name": "Starsector"
 	},
@@ -1937,14 +2091,13 @@
 		}
 	},
 	{
-		"id": "synthetikuniverse",
-		"oldId": "synthetik",
-		"name": "SYNTHETIK"
-	},
-	{
 		"id": "sugaryspire",
 		"oldId": "sugary-spire",
 		"name": "Sugary Spire"
+	},
+	{
+		"id": "summonnight",
+		"name": "Summon Night"
 	},
 	{
 		"id": "sunhaven",
@@ -1969,6 +2122,16 @@
 		"oldId": "super-snail",
 		"name": "Super Snail"
 	},
+	{
+		"id": "swbf2frosty",
+		"oldId": "swbf2-frosty",
+		"name": "SWBF2 Frosty Editor Modding"
+	},
+	{
+		"id": "synthetikuniverse",
+		"oldId": "synthetik",
+		"name": "SYNTHETIK"
+	},
 	[
 		{
 			"id": "starstable",
@@ -1984,6 +2147,17 @@
 		"id": "tabs",
 		"oldId": "totally-accurate-battle-simulator",
 		"name": "Totally Accurate Battle Simulator"
+	},
+	{
+		"id": "tacotower",
+		"oldId": "taco-tower",
+		"name": "Taco Tower",
+		"official": true
+	},
+	{
+		"id": "taintedgrail",
+		"oldId": "taintedgrail-thefallofavalon",
+		"name": "Tainted Grail: The Fall of Avalon"
 	},
 	{
 		"id": "trailmakers",
@@ -2093,9 +2267,24 @@
 		}
 	},
 	{
+		"id": "thebazaar",
+		"name": "The Bazaar"
+	},
+	{
+		"id": "thedetectiveisalreadydead",
+		"oldId": "the-detective-is-already-dead",
+		"name": "The Detective Is Already Dead"
+	},
+	{
 		"id": "theinnerworld",
 		"oldId": "the-inner-world",
 		"name": "The Inner World"
+	},
+	{
+		"id": "thevalesend",
+		"oldId": "the-vales-end",
+		"name": "The Vales End",
+		"official": true
 	},
 	{
 		"id": "thevoid",
@@ -2131,6 +2320,11 @@
 		"id": "towerunite",
 		"oldId": "tower-unite",
 		"name": "Tower Unite"
+	},
+	{
+		"id": "troubleinterroristtown",
+		"oldId": "trouble-in-terrorist-town",
+		"name": "Trouble in Terrorist Town"
 	},
 	{
 		"id": "turnipboy",
@@ -2180,6 +2374,11 @@
 		"oldId": "the-precinct",
 		"name": "The Precinct",
 		"official": true
+	},
+	{
+		"id": "thewaltenfiles",
+		"oldId": "the-walten-files-new",
+		"name": "The Walten Files"
 	},
 	{
 		"id": "thewolf",
@@ -2309,6 +2508,10 @@
 		}
 	],
 	{
+		"id": "ultrasunepiv",
+		"name": "Pokémon Ultra Sun EPIV"
+	},
+	{
 		"id": "uhctherenaissance",
 		"oldId": "uhc-the-renaissance",
 		"name": "Minecraft UHC: The Renaissance",
@@ -2317,6 +2520,14 @@
 	{
 		"id": "unbeatable",
 		"name": "UNBEATABLE"
+	},
+	{
+		"id": "urge",
+		"name": "Urge"
+	},
+	{
+		"id": "vangers",
+		"name": "Vangers"
 	},
 	{
 		"id": "venaitura",
@@ -2343,6 +2554,10 @@
 		"name": "Wakfu"
 	},
 	{
+		"id": "walkr",
+		"name": "Walkr"
+	},
+	{
 		"id": "warcommander",
 		"name": "War Commander"
 	},
@@ -2362,6 +2577,14 @@
 			"search": {
 				"oldName": "WoWWiki"
 			}
+		},
+		{
+			"parentRef": "warcraft",
+			"oldId": "wow"
+		},
+		{
+			"parentRef": "warcraft",
+			"oldId": "worldofwarcraft"
 		}
 	],
 	{
@@ -2406,9 +2629,48 @@
 		"name": "World of Babel"
 	},
 	{
+		"id": "wesleysroguelikedungeons",
+		"oldId": "wrdminecraft",
+		"name": "Wesley's Roguelike Dungeons"
+	},
+	{
+		"id": "worldofgrimm",
+		"name": "World of Grimm"
+	},
+	{
+		"id": "wurm",
+		"name": "Wurm"
+	},
+	{
+		"id": "xformgames",
+		"oldId": "xform-games",
+		"name": "Xform Games"
+	},
+	{
+		"id": "xiii",
+		"name": "XIII"
+	},
+	{
+		"id": "yaoling",
+		"oldId": "yaoling-mythical-journey",
+		"name": "Yaoling Mythical Journey",
+		"official": true,
+		"search": {
+			"oldName": "Yaoling: Mythical Journey"
+		}
+	},
+	{
 		"id": "yohanebid",
 		"oldId": "yohane-deepblue",
 		"name": "Yohane the Parhelion -BLAZE in the DEEPBLUE-"
+	},
+	{
+		"id": "yokaiwatch",
+		"name": "Yo-kai Watch"
+	},
+	{
+		"id": "yosakoi",
+		"name": "Yosakoi"
 	},
 	[
 		{
@@ -2421,32 +2683,6 @@
 			"oldId": "anotherchronicle"
 		}
 	],
-	{
-		"id": "worldofgrimm",
-		"name": "World of Grimm"
-	},
-	{
-		"id": "xformgames",
-		"oldId": "xform-games",
-		"name": "Xform Games"
-	},
-	{
-		"id": "yaoling",
-		"oldId": "yaoling-mythical-journey",
-		"name": "Yaoling Mythical Journey",
-		"official": true,
-		"search": {
-			"oldName": "Yaoling: Mythical Journey"
-		}
-	},
-	{
-		"id": "yokaiwatch",
-		"name": "Yo-kai Watch"
-	},
-	{
-		"id": "yosakoi",
-		"name": "Yosakoi"
-	},
 	{
 		"id": "zeldacraft",
 		"name": "Zeldacraft"
