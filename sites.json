@@ -477,6 +477,11 @@
 		}
 	},
 	{
+		"id": "chorusofdragons",
+		"oldId": "a-chorus-of-dragons",
+		"name": "A Chorus of Dragons"
+	},
+	{
 		"id": "citysmash",
 		"oldId": "city-smash",
 		"name": "City Smash"
@@ -663,6 +668,11 @@
 		"id": "dicefolk",
 		"name": "Dicefolk",
 		"official": true
+	},
+	{
+		"id": "divinityoriginalsin",
+		"oldId": "divinity-original-sin-enhanced-edition",
+		"name": "Divinity: Original Sin"
 	},
 	{
 		"id": "disfigure",
@@ -1010,6 +1020,15 @@
 		"name": "God of Weapons"
 	},
 	{
+		"id": "grimmsnotes",
+		"oldId": "grimms-notes-jp",
+		"name": "Grimms Notes"
+	},
+	{
+		"id": "gtfo",
+		"name": "GTFO"
+	},
+	{
 		"id": "gttod",
 		"name": "Get To The Orange Door"
 	},
@@ -1076,12 +1095,26 @@
 		"official": true
 	},
 	{
+		"id": "hellofromthehallowoods",
+		"oldId": "hello-from-the-hallowoods",
+		"name": "Hello from the Hallowoods"
+	},
+	{
+		"id": "historicalsims",
+		"oldId": "historicalsims2",
+		"name": "Historical Sims 2"
+	},
+	{
 		"id": "holocure",
 		"name": "Holocure"
 	},
 	{
 		"id": "horticular",
 		"name": "Horticular"
+	},
+	{
+		"id": "houseflipper",
+		"name": "House Flipper"
 	},
 	{
 		"id": "hyboriangates",
@@ -1161,6 +1194,11 @@
 		"oldId": "ipecacmod",
 		"name": "IPECAC Community Mod",
 		"official": true
+	},
+	{
+		"id": "jatpm",
+		"oldId": "jimmy-and-the-pulsating-mass",
+		"name": "Jimmy and the Pulsating Mass"
 	},
 	{
 		"id": "journeytothesavageplanet",
@@ -1360,6 +1398,10 @@
 	{
 		"id": "kryeit",
 		"name": "Kryeit"
+	},
+	{
+		"id": "madeon",
+		"name": "Madeon"
 	},
 	{
 		"id": "mahjongsoul",
@@ -1590,8 +1632,12 @@
 		"name": "Nox"
 	},
 	{
+		"id": "octohill",
+		"name": "Octohill Ski Tycoon",
+		"official": true
+	},
+	{
 		"id": "oddrealm",
-		"oldId": "oddrealm",
 		"name": "Odd Realm",
 		"official": true
 	},
@@ -1712,6 +1758,12 @@
 		"name": "Pixel Tribe"
 	},
 	{
+		"id": "pixelya",
+		"oldid": "pyf",
+		"name": "Pixelya",
+		"official": true
+	},
+	{
 		"id": "pkmnseasons",
 		"oldId": "pokemon-seasons-solstice-equinox",
 		"name": "Pokémon Seasons: Solstice & Equinox",
@@ -1735,6 +1787,12 @@
 	{
 		"id": "predecessor",
 		"name": "Predecessor",
+		"official": true
+	},
+	{
+		"id": "prodigiumreforged",
+		"oldId": "prodigium-reforged",
+		"name": "Prodigium Reforged",
 		"official": true
 	},
 	{
@@ -1768,6 +1826,14 @@
 		"oldId": "power-of-ten",
 		"name": "Power of Ten",
 		"official": true
+	},
+	{
+		"id": "portalknights",
+		"name": "Portal Knights"
+	},
+	{
+		"id": "powerrangerslegacywars",
+		"name": "Power Rangers: Legacy Wars"
 	},
 	{
 		"id": "punchclub",
@@ -1821,6 +1887,11 @@
 	{
 		"id": "roboquest",
 		"name": "Roboquest"
+	},
+	{
+		"id": "roguelegacy",
+		"oldId": "rogue-legacy",
+		"name": "Rogue Legacy"
 	},
 	{
 		"id": "revita",
