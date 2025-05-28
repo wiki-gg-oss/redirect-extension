@@ -74,6 +74,10 @@
 		}
 	},
 	{
+		"id": "aeonsend",
+		"name": "Aeon's End"
+	},
+	{
 		"id": "aground",
 		"name": "Aground"
 	},
@@ -386,7 +390,7 @@
 	},
 	{
 		"id": "bscotch",
-		"oldid": "crashlands",
+		"oldId": "crashlands",
 		"name": "Butterscotch Shenanigans"
 	},
 	{
@@ -430,6 +434,10 @@
 		"id": "castledoombad",
 		"oldId": "castle-doombad",
 		"name": "Castle Doombad"
+	},
+	{
+		"id": "cavecrawlers",
+		"name": "Cave Crawlers"
 	},
 	{
 		"id": "cavesroguelike",
@@ -587,7 +595,7 @@
 	},
 	{
 		"id": "darkgardenstudios",
-		"oldid": "darkage-bizarre",
+		"oldId": "darkage-bizarre",
 		"name": "DarkGarden Studios",
 		"official": true
 	},
@@ -800,6 +808,11 @@
 		}
 	},
 	{
+		"id": "enterthegungeon",
+		"name": "Enter The Gungeon",
+		"official": true
+	},
+	{
 		"id": "epicbattlefantasy",
 		"name": "Epic Battle Fantasy",
 		"official": true
@@ -816,18 +829,16 @@
 		"name": "ENA"
 	},
 	{
+		"id": "endlessdungeon",
+		"name": "Endless Dungeon"
+	},
+	{
+		"id": "endlesslegend",
+		"name": "Endless Legend"
+	},
+	{
 		"id": "erenshor",
 		"name": "Erenshor",
-		"official": true
-	},
-	{
-		"id": "exapico",
-		"oldId": "artonelico",
-		"name": "EXA PICO"
-	},
-	{
-		"id": "enterthegungeon",
-		"name": "Enter The Gungeon",
 		"official": true
 	},
 	{
@@ -844,6 +855,11 @@
 		"id": "everdreamvalley",
 		"name": "Everdream Valley",
 		"official": true
+	},
+	{
+		"id": "exapico",
+		"oldId": "artonelico",
+		"name": "EXA PICO"
 	},
 	{
 		"id": "fallenaces",
@@ -920,12 +936,12 @@
 	},
 	{
 		"id": "foresthills",
-		"oldid": "lastyear",
+		"oldId": "lastyear",
 		"name": "Forest Hills: The Last Year"
 	},
 	{
 		"id": "fnawfangames",
-		"oldid": "fnaw-fangames",
+		"oldId": "fnaw-fangames",
 		"name": "Five Nights at Wario's Fangames"
 	},
 	{
@@ -1186,6 +1202,12 @@
 		"name": "In Stars and Time"
 	},
 	{
+		"id": "intrusion",
+		"oldId": "teochrome-archives-intrusion",
+		"name": "INTRUSION",
+		"official": true
+	},
+	{
 		"id": "itrtg",
 		"name": "Idling to Rule the Gods"
 	},
@@ -1252,6 +1274,10 @@
 		"id": "leafblowerrevolution",
 		"oldId": "leaf-blower-revolution",
 		"name": "Leaf Blower Revolution"
+	},
+	{
+		"id": "ightskies",
+		"name": "Leafightskies"
 	},
 	[
 		{
@@ -1400,6 +1426,11 @@
 		"name": "Kryeit"
 	},
 	{
+		"id": "lovebrushchronicles",
+		"oldId": "lovebrush-chronicles",
+		"name": "Lovebrush Chronicles"
+	},
+	{
 		"id": "madeon",
 		"name": "Madeon"
 	},
@@ -1444,6 +1475,10 @@
 		"id": "metalhellsinger",
 		"oldId": "metal-hellsinger",
 		"name": "Metal Hellsinger"
+	},
+	{
+		"id": "mightyparty",
+		"name": "Mighty Party"
 	},
 	{
 		"id": "mili",
@@ -1529,6 +1564,12 @@
 		"official": true
 	},
 	{
+		"id": "molten546",
+		"oldId": "crafters-caretaker-projects",
+		"name": "Molten546 Wiki",
+		"official": true
+	},
+	{
 		"id": "momodora",
 		"name": "Momodora"
 	},
@@ -1590,13 +1631,13 @@
 		"name": "Nights of Azure"
 	},
 	{
-		"id": "mightyparty",
-		"name": "Mighty Party"
-	},
-	{
 		"id": "nibiru",
 		"name": "Nibiru",
 		"official": true
+	},
+	{
+		"id": "nichijou",
+		"name": "Nichijou"
 	},
 	{
 		"id": "ninesols",
@@ -1721,6 +1762,10 @@
 		"name": "Palworld"
 	},
 	{
+		"id": "paralives",
+		"name": "Paralives"
+	},
+	{
 		"id": "pathofachra",
 		"oldId": "path-of-achra",
 		"name": "Path of Achra"
@@ -1754,12 +1799,12 @@
 	},
 	{
 		"id": "pixeltribe",
-		"oldid": "pixel-tribe",
+		"oldId": "pixel-tribe",
 		"name": "Pixel Tribe"
 	},
 	{
 		"id": "pixelya",
-		"oldid": "pyf",
+		"oldId": "pyf",
 		"name": "Pixelya",
 		"official": true
 	},
@@ -1845,6 +1890,11 @@
 		"id": "quasimorph",
 		"name": "Quasimorph",
 		"official": true
+	},
+	{
+		"id": "racingvtuber",
+		"oldId": "racingvtuber-encyclopedia",
+		"name": "RacingVtuber Wiki"
 	},
 	{
 		"id": "radiancemodding",
