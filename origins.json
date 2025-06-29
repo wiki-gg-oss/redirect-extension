@@ -1,0 +1,10 @@
+{
+    "farms": {
+        "fandom": "fandom.com",
+        "miraheze": "miraheze.com"
+    },
+    "domainAliasMapping": {
+        "wikia.org": "fandom.com",
+        "gamepedia.com": "fandom.com"
+    }
+}

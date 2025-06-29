@@ -1,6 +1,10 @@
 /** @typedef {import( '../util.js' ).SiteRecord} SiteRecord */
 
-import { getNativeSettings } from '../util.js';
+import wikiOrigins from '../../origins.json';
+import {
+    getNativeSettings,
+    isDevelopmentBuild
+} from '../util.js';
 import defaultSettingsFactory from '../../defaults.js';
 import {
     constructReplacementMarker,
@@ -98,13 +102,15 @@ export class SearchModule {
 
         getNativeSettings().local.get( [
             'sfs',
-            'disabledWikis'
+            'disabledWikis',
+            'ffUseOptimisedSearchCore'
         ], result => {
             result = result ?? defaults;
 
             const
                 defaults = defaultSettingsFactory(),
                 settings = ( result.sfs ?? defaults.sfs )[ id ] ?? defaults.sfs[ id ],
+                useOptimisedLookups = ( result.ffUseOptimisedSearchCore ?? defaults.ffUseOptimisedSearchCore ),
                 doRoutine = instance[ {
                     filter: 'hideResult',
                     rewrite: 'replaceResult',
@@ -119,17 +125,83 @@ export class SearchModule {
 
             instance.initialise();
 
-            // TODO: merge selectors and run that query, then determine the wiki
-            for ( const wikiInfo of wikis ) {
-                if ( wikiInfo.bannerOnly || disabledWikis.includes( wikiInfo.id ) ) {
-                    continue;
+            if ( useOptimisedLookups ) {
+                const domains = [ ...new Set( [
+                    ...Object.values( wikiOrigins.farms ),
+                    ...Object.keys( wikiOrigins.domainAliasMapping )
+                ] ) ];
+                const domainAliasMapping = wikiOrigins.domainAliasMapping;
+
+                // Construct a domain link selector
+                const domainSelector = domains.map( item => `a[href*=".${item}"]` ).join( ', ' );
+
+                // Construct a domain-to-wiki index
+                // TODO: does not support root domains but probably no need for that?
+                const domainIndex = domains.reduce( ( accu, item ) => {
+                    accu[ item ] = {};
+                    return accu;
+                }, {} );
+                if ( isDevelopmentBuild() ) {
+                    console.log( `[Rtw.SearchModule] Building a domain index: domains=`, domains, `domainAliasMapping=`,
+                        domainAliasMapping );
+                }
+                for ( const wikiInfo of wikis ) {
+                    if ( wikiInfo.bannerOnly || disabledWikis.includes( wikiInfo.id ) ) {
+                        continue;
+                    }
+
+                    let rootDomain = 'fandom.com';
+                    if ( wikiInfo.farm ) {
+                        rootDomain = wikiOrigins.farms[ wikiInfo.farm ];
+                    }
+
+                    for ( const oldId of ( wikiInfo.oldIds || [ wikiInfo.oldId || wikiInfo.id ] ) ) {
+                        domainIndex[ rootDomain ][ oldId ] = wikiInfo;
+                    }
                 }
 
-                for ( const element of rootNode.querySelectorAll( wikiInfo.search.badSelector ) ) {
+                if ( isDevelopmentBuild() ) {
+                    console.log( `[Rtw.SearchModule] Built domain index: domainIndex=`, domainIndex );
+                }
+
+                const urlRegex = new RegExp( /https?:\/\/([a-zA-Z0-9\.\-]+)\.([\w]+\.\w+)(?:\/|$)/ );
+                for ( const element of rootNode.querySelectorAll( domainSelector ) ) {
+                    const m = urlRegex.exec( element.getAttribute( 'href' ) );
+                    if ( !m ) {
+                        continue;
+                    }
+
+                    const
+                        subdomain = m[ 1 ],
+                        domain = domainAliasMapping[ m[ 2 ] ] ?? m[ 2 ],
+                        subdomainIndex = domainIndex[ domain ];
+                    if ( !subdomainIndex ) {
+                        continue;
+                    }
+
+                    const wikiInfo = subdomainIndex[ subdomain ];
+                    if ( !wikiInfo ) {
+                        continue;
+                    }
+
                     const container = instance.resolveResultContainer( element );
                     if ( container !== null && container.parentElement !== null && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE ) ) {
                         doRoutine.call( instance, wikiInfo, container, element );
                         container.setAttribute( SearchModule.MARKER_ATTRIBUTE, true );
+                    }
+                }
+            } else {
+                for ( const wikiInfo of wikis ) {
+                    if ( wikiInfo.bannerOnly || disabledWikis.includes( wikiInfo.id ) ) {
+                        continue;
+                    }
+
+                    for ( const element of rootNode.querySelectorAll( wikiInfo.search.badSelector ) ) {
+                        const container = instance.resolveResultContainer( element );
+                        if ( container !== null && container.parentElement !== null && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE ) ) {
+                            doRoutine.call( instance, wikiInfo, container, element );
+                            container.setAttribute( SearchModule.MARKER_ATTRIBUTE, true );
+                        }
                     }
                 }
             }
