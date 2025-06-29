@@ -39,6 +39,7 @@
 			"[oldId]": "string (same as 'id'): The domain of the Fandom wiki, if different from the wiki.gg ID",
 			"name": "string: The name of the wiki.gg wiki",
 			"[official]": "boolean (false): Whether the new wiki is considered official by the developers",
+			"[farm]": "string (fandom): The farm the original wiki belonged to, defined in origins.json",
 			"[uiClass]": "...: Display style in the settings view. Only 'wiki-indent' is accepted, which adds space to the left of the entry.",
 			"[search]": {
 				"[oldName]": "string (same as 'name'): Name of the Fandom wiki, if different from the wiki.gg name.",
