@@ -25,12 +25,29 @@ const wikis = prepareWikisInfo( getWikis( false, true ), {
 class GoogleSearchModule extends GenericSearchModule {
     FIRST_RESULTS_CONTAINER_SELECTOR = 'div.MjjYud, div.g, .xpd';
     RESULTS_CONTAINER_CLASS = 'div.MjjYud, div.g';
-    SITE_NETWORK_TITLE_SELECTOR = 'span.VuuXrf';
-    EXTERNAL_LINK_SELECTOR = 'h3 > a.l, span > a[data-ved]';
+    SITE_NETWORK_TITLE_SELECTOR =
+        // Desktop
+        'span.VuuXrf'
+        // Mobile
+        + ', div.GkAmnd.ZaCDgb.RES9jf.q8U8x.OSrXXb.wHYlTd';
+    EXTERNAL_LINK_SELECTOR =
+        // Desktop
+        'h3 > a.l, span > a[data-ved]'
+        // Mobile: Top link
+        + ', .OhZyZc > a[data-ved]'
+        // Mobile: Site links
+        + ', div.DkX4ue.Va3FIb.EE3Upf.lVm3ye > a[data-hveid]';
     TRANSLATE_SELECTOR = '.LAWljd + .fl[ping], .fl.iUh30';
+    RESULT_HEADING_SELECTOR =
+        // Desktop
+        'h3'
+        // Mobile
+        + ', div.F0FGWb.v7jaNc.ynAwRc.MBeuO.q8U8x > div > span';
+    MOBILE_BREADCRUMB_SELECTOR = 'div.kb0PBd.cvP2Ce > span.nC62wb, .sCuL3 > div';
     RESULT_SIDEPANEL_SELECTOR = 'div[jsslot] > div[jsname="I3kE2c"]';
     MORE_FROM_NETWORK_SELECTOR = 'a.fl[href*="site:fandom.com"]';
     NEW_SITELINKS_SELECTOR = 'li.KTAFWb > a.dM1Yyd';
+
 
     #isMobile = false;
 
@@ -58,7 +75,7 @@ class GoogleSearchModule extends GenericSearchModule {
     resolveResultContainer( element ) {
         const result = crawlUntilParentFound( element, this.FIRST_RESULTS_CONTAINER_SELECTOR );
         // We might be in another result container, and if so, there's a table with more results
-        const upperContainer = crawlUntilParentFound( result, this.RESULTS_CONTAINER_CLASS, 3 );
+        const upperContainer = crawlUntilParentFound( result, this.RESULTS_CONTAINER_CLASS, 5 );
         return upperContainer ?? result;
     }
 
@@ -96,7 +113,6 @@ class GoogleSearchModule extends GenericSearchModule {
      * @param {HTMLElement} _foundLinkElement
      */
     async replaceResult( wikiInfo, containerElement, _foundLinkElement ) {
-        console.log(containerElement)
         const oldDomain = `${wikiInfo.oldId || wikiInfo.id}.fandom.com`,
             newDomain = `${wikiInfo.id}.wiki.gg`;
 
@@ -116,7 +132,7 @@ class GoogleSearchModule extends GenericSearchModule {
             RewriteUtil.doLink( wikiInfo, subLinkElement );
         }
         // Rewrite title
-        for ( const h3 of containerElement.getElementsByTagName( 'h3' ) ) {
+        for ( const h3 of containerElement.querySelectorAll( this.RESULT_HEADING_SELECTOR ) ) {
             RewriteUtil.doH3( wikiInfo, h3 );
             // Insert a badge indicating the result was modified if we haven't done that already (check heading and
             // result group)
@@ -136,7 +152,7 @@ class GoogleSearchModule extends GenericSearchModule {
                 }
             }
         } else {
-            const mobileBreadcrumb = containerElement.querySelector( '.sCuL3 > div' );
+            const mobileBreadcrumb = containerElement.querySelector( this.MOBILE_BREADCRUMB_SELECTOR );
             if ( mobileBreadcrumb ) {
                 mobileBreadcrumb.textContent = mobileBreadcrumb.textContent.replace( oldDomain, newDomain );
             }

@@ -280,6 +280,9 @@ export const RewriteUtil = {
         if ( link.getAttribute( 'data-jsarwt' ) ) {
             link.setAttribute( 'data-jsarwt', '0' );
         }
+        link.removeAttribute( 'data-hveid' );
+        link.removeAttribute( 'data-ctpacw' );
+        link.removeAttribute( 'data-ved' );
         // Defuse pingbacks
         link.removeAttribute( 'ping' );
     },
