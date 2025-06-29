@@ -3,13 +3,19 @@ import sites from '../sites.json';
 import defaultSettingsFactory from '../defaults.js';
 
 
+let _isDevBuild = null;
+
+
 /**
  * Checks if the extension wasn't packaged for store.
  *
  * @return {boolean}
  */
 export function isDevelopmentBuild() {
-    return chrome.runtime.getManifest().name.includes( 'DEVBUILD' );
+    if ( _isDevBuild === null ) {
+        _isDevBuild = chrome.runtime.getManifest().name.includes( 'DEVBUILD' );
+    }
+    return _isDevBuild;
 }
 
 
