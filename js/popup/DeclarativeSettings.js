@@ -5,7 +5,8 @@ const
     storage = window.storage || chrome.storage,
     knownKeys = [],
     updateCallbacks = [],
-    userDefaults = defaultSettingsFactory();
+    userDefaults = defaultSettingsFactory(),
+    debugMode = ( new URLSearchParams( location.search ) ).get( 'dsdebug' );
 let settingsCache = {};
 
 
@@ -57,6 +58,10 @@ export function getForKey( key ) {
 export function setAtKey( key, value ) {
     value = _normaliseValue( value );
 
+    if ( debugMode ) {
+        console.log( `[DeclarativeSettings] setAtKey( '${key}', '${value}' )` )
+    }
+
     let mainStore = settingsCache;
 
     // Advance stores if a sub-key was requested
@@ -76,6 +81,9 @@ export function setAtKey( key, value ) {
 export function updateCache() {
     storage.local.get( knownKeys, result => {
         settingsCache = result ?? {};
+        if ( debugMode ) {
+            console.log( `[DeclarativeSettings] updateCache() succeeded; `, settingsCache )
+        }
         for ( const callback of updateCallbacks ) {
             callback( result );
         }
