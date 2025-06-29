@@ -1,7 +1,7 @@
 {
     "farms": {
         "fandom": "fandom.com",
-        "miraheze": "miraheze.com"
+        "miraheze": "miraheze.org"
     },
     "domainAliasMapping": {
         "wikia.org": "fandom.com",
