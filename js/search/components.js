@@ -22,10 +22,10 @@ import {
 export function constructRedirectBadge( options ) {
     return createDomElement( 'span', {
         style: Object.assign( {
-            backgroundColor: '#0002',
+            backgroundColor: '#c3216b33',
             fontSize: '90%',
             opacity: 0.8,
-            border: '1px solid #0005',
+            border: '1px solid #c3216b60',
             borderRadius: '4px',
             padding: '1px 6px',
             verticalAlign: 'middle',
