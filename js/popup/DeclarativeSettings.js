@@ -7,7 +7,10 @@ const
     updateCallbacks = [],
     userDefaults = defaultSettingsFactory(),
     debugMode = ( new URLSearchParams( location.search ) ).get( 'dsdebug' );
-let settingsCache = {};
+let
+    settingsCache = {},
+    updateCallbacksOneshot = [],
+    updateCacheGuard = false;
 
 
 function _normaliseValue( value ) {
@@ -79,20 +82,45 @@ export function setAtKey( key, value ) {
 
 
 export function updateCache() {
+    if ( updateCacheGuard ) {
+        console.warn( `[DeclarativeSettings] Dropping out of a recursive updateCache() call` );
+        return;
+    }
+
+    updateCacheGuard = true;
+
     storage.local.get( knownKeys, result => {
         settingsCache = result ?? {};
         if ( debugMode ) {
-            console.log( `[DeclarativeSettings] updateCache() succeeded; `, settingsCache )
+            console.log( `[DeclarativeSettings] updateCache() succeeded; `, settingsCache );
+            console.log( `[DeclarativeSettings] Running ${updateCallbacks.length} callbacks` );
         }
         for ( const callback of updateCallbacks ) {
             callback( result );
         }
+
+        if ( updateCallbacksOneshot.length ) {
+            if ( debugMode ) {
+                console.log( `[DeclarativeSettings] Running ${updateCallbacksOneshot.length} one-shot callbacks` );
+            }
+            for ( const callback of updateCallbacksOneshot ) {
+                callback( result );
+            }
+            updateCallbacksOneshot = [];
+        }
+
+        updateCacheGuard = false;
     } );
 }
 
 
 export function registerUpdateCallback( callback ) {
     updateCallbacks.push( callback );
+}
+
+
+export function registerOneshotUpdateCallback( callback ) {
+    updateCallbacksOneshot.push( callback );
 }
 
 
@@ -104,6 +132,15 @@ export class Control {
         const key = inputElement.getAttribute( 'data-key' );
         _trackKey( key );
 
+        if ( debugMode ) {
+            console.log( `[DeclarativeSettings] Binding control for key '${key}': ${inputElement.type}; `,
+                inputElement );
+        }
+
+        // Disable the input until update callbacks have run
+        inputElement.disabled = true;
+        registerOneshotUpdateCallback( () => ( inputElement.disabled = false ) );
+
         switch ( inputElement.type ) {
             case "radio":
                 return this.#initialiseRadio( key, inputElement );
@@ -112,6 +149,11 @@ export class Control {
                     return this.#initialiseArrayCheckbox( key, inputElement );
                 }
                 return this.#initialiseCheckbox( key, inputElement );
+            case 'select':
+            case 'select-one':
+                return this.#initialiseSelect( key, inputElement );
+            default:
+                console.warn( `[DeclarativeSettings] Unrecognised input type: ${inputElement.type}` );
         }
     }
 
@@ -131,6 +173,21 @@ export class Control {
 
         registerUpdateCallback( () => {
             inputElement.checked = value === getForKey( key );
+        } );
+    }
+
+
+    /**
+     * @param {string} key
+     * @param {HTMLSelectElement} inputElement
+     */
+    static #initialiseSelect( key, inputElement ) {
+        inputElement.addEventListener( 'change', () => {
+            setAtKey( key, _normaliseValue( inputElement.value ) );
+        } );
+
+        registerUpdateCallback( () => {
+            inputElement.value = getForKey( key );
         } );
     }
 
