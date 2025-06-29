@@ -2,7 +2,10 @@
 
 import { getNativeSettings } from '../util.js';
 import defaultSettingsFactory from '../../defaults.js';
-import { constructReplacementMarker } from './components.js';
+import {
+    constructReplacementMarker,
+    constructDisabledResultControl
+} from './components.js';
 
 
 /**
