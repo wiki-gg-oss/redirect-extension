@@ -23,10 +23,11 @@ const wikis = prepareWikisInfo( getWikis( false, true ), {
 
 
 class GoogleSearchModule extends GenericSearchModule {
-    RESULTS_CONTAINER_CLASS = 'div.g';
+    FIRST_RESULTS_CONTAINER_SELECTOR = 'div.MjjYud, div.g, .xpd';
+    RESULTS_CONTAINER_CLASS = 'div.MjjYud, div.g';
     SITE_NETWORK_TITLE_SELECTOR = 'span.VuuXrf';
     EXTERNAL_LINK_SELECTOR = 'h3 > a.l, span > a[data-ved]';
-    TRANSLATE_SELECTOR = '.fl.iUh30';
+    TRANSLATE_SELECTOR = '.LAWljd + .fl[ping], .fl.iUh30';
     RESULT_SIDEPANEL_SELECTOR = 'div[jsslot] > div[jsname="I3kE2c"]';
     MORE_FROM_NETWORK_SELECTOR = 'a.fl[href*="site:fandom.com"]';
 
@@ -48,7 +49,7 @@ class GoogleSearchModule extends GenericSearchModule {
      * @return {HTMLElement?}
      */
     resolveResultContainer( element ) {
-        const result = crawlUntilParentFound( element, '.g, .xpd' );
+        const result = crawlUntilParentFound( element, this.FIRST_RESULTS_CONTAINER_SELECTOR );
         // We might be in another result container, and if so, there's a table with more results
         const upperContainer = crawlUntilParentFound( result, this.RESULTS_CONTAINER_CLASS, 3 );
         return upperContainer ?? result;
@@ -88,6 +89,7 @@ class GoogleSearchModule extends GenericSearchModule {
      * @param {HTMLElement} _foundLinkElement
      */
     async replaceResult( wikiInfo, containerElement, _foundLinkElement ) {
+        console.log(containerElement)
         const oldDomain = `${wikiInfo.oldId || wikiInfo.id}.fandom.com`,
             newDomain = `${wikiInfo.id}.wiki.gg`;
         const isMobile = containerElement.classList.contains( 'xpd' );
