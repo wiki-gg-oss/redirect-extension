@@ -32,6 +32,8 @@ class GoogleSearchModule extends GenericSearchModule {
     MORE_FROM_NETWORK_SELECTOR = 'a.fl[href*="site:fandom.com"]';
     NEW_SITELINKS_SELECTOR = 'li.KTAFWb > a.dM1Yyd';
 
+    #isMobile = false;
+
 
     /**
      * @protected
@@ -39,6 +41,10 @@ class GoogleSearchModule extends GenericSearchModule {
      */
     getId() {
         return 'google';
+    }
+
+    initialise() {
+        this.#isMobile = !!document.querySelector( '#before-appbar' );
     }
 
 
@@ -93,10 +99,9 @@ class GoogleSearchModule extends GenericSearchModule {
         console.log(containerElement)
         const oldDomain = `${wikiInfo.oldId || wikiInfo.id}.fandom.com`,
             newDomain = `${wikiInfo.id}.wiki.gg`;
-        const isMobile = containerElement.classList.contains( 'xpd' );
 
         const badgeElement = constructRedirectBadge( {
-            isGoogleMobile: isMobile,
+            isGoogleMobile: this.#isMobile,
             allMoved: true
         } );
 
@@ -124,7 +129,7 @@ class GoogleSearchModule extends GenericSearchModule {
             RewriteUtil.doLink( wikiInfo, translate );
         }
         // Rewrite URL element
-        if ( !isMobile ) {
+        if ( !this.#isMobile ) {
             for ( const cite of containerElement.getElementsByTagName( 'cite' ) ) {
                 if ( cite.firstChild.textContent ) {
                     cite.firstChild.textContent = cite.firstChild.textContent.replace( oldDomain, newDomain );

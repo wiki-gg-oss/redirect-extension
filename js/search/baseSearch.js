@@ -22,6 +22,12 @@ export class SearchModule {
 
 
     /**
+     * @protected
+    */
+    initialise() {}
+
+
+    /**
      * @abstract
      * @protected
      * @param {SiteRecord} wikiInfo
@@ -107,6 +113,8 @@ export class SearchModule {
             }
 
             const disabledWikis = result.disabledWikis || defaults.disabledWikis;
+
+            instance.initialise();
 
             // TODO: merge selectors and run that query, then determine the wiki
             for ( const wikiInfo of wikis ) {
