@@ -38,10 +38,11 @@ export class SearchModule {
      * @abstract
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} foundLinkElement
      */
-    async replaceResult( wikiInfo, containerElement, foundLinkElement ) {
+    async replaceResult( wikiInfo, rootDomain, containerElement, foundLinkElement ) {
         throw new Error( `${this.constructor.name}.replaceResult not implemented.` );
     }
 
@@ -50,10 +51,11 @@ export class SearchModule {
      * @abstract
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} foundLinkElement
      */
-    async hideResult( wikiInfo, containerElement, foundLinkElement ) {
+    async hideResult( wikiInfo, rootDomain, containerElement, foundLinkElement ) {
         throw new Error( `${this.constructor.name}.hideResult not implemented.` );
     }
 
@@ -62,10 +64,11 @@ export class SearchModule {
      * @abstract
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} foundLinkElement
      */
-    async disarmResult( wikiInfo, containerElement, foundLinkElement ) {
+    async disarmResult( wikiInfo, rootDomain, containerElement, foundLinkElement ) {
         throw new Error( `${this.constructor.name}.disarmResult not implemented.` );
     }
 
@@ -173,7 +176,8 @@ export class SearchModule {
 
                     const
                         subdomain = m[ 1 ],
-                        domain = domainAliasMapping[ m[ 2 ] ] ?? m[ 2 ],
+                        rawDomain = m[ 2 ],
+                        domain = domainAliasMapping[ rawDomain ] ?? rawDomain,
                         subdomainIndex = domainIndex[ domain ];
                     if ( !subdomainIndex ) {
                         continue;
@@ -186,7 +190,7 @@ export class SearchModule {
 
                     const container = instance.resolveResultContainer( element );
                     if ( container !== null && container.parentElement !== null && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE ) ) {
-                        doRoutine.call( instance, wikiInfo, container, element );
+                        doRoutine.call( instance, wikiInfo, rawDomain, container, element );
                         container.setAttribute( SearchModule.MARKER_ATTRIBUTE, true );
                     }
                 }
@@ -199,7 +203,7 @@ export class SearchModule {
                     for ( const element of rootNode.querySelectorAll( wikiInfo.search.badSelector ) ) {
                         const container = instance.resolveResultContainer( element );
                         if ( container !== null && container.parentElement !== null && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE ) ) {
-                            doRoutine.call( instance, wikiInfo, container, element );
+                            doRoutine.call( instance, wikiInfo, 'fandom.com', container, element );
                             container.setAttribute( SearchModule.MARKER_ATTRIBUTE, true );
                         }
                     }
@@ -220,10 +224,11 @@ export class GenericSearchModule extends SearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} _foundLinkElement
      */
-    async hideResult( wikiInfo, containerElement, _foundLinkElement ) {
+    async hideResult( wikiInfo, rootDomain, containerElement, _foundLinkElement ) {
         // Try to find the first wiki.gg result after this one
         const ggResult = this.findNearestGgResult( wikiInfo, containerElement );
 
@@ -240,10 +245,11 @@ export class GenericSearchModule extends SearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} foundLinkElement
      */
-    async disarmResult( wikiInfo, containerElement, foundLinkElement ) {
+    async disarmResult( wikiInfo, rootDomain, containerElement, foundLinkElement ) {
         const controlElement = constructDisabledResultControl( wikiInfo );
         containerElement.prepend( controlElement );
         containerElement.classList.add( this.DISABLED_RESULT_CLASS );
@@ -336,7 +342,7 @@ export function awaitElement( knownParent, selector, callback ) {
 
 
 export const RewriteUtil = {
-    doLink( wiki, link ) {
+    doLink( wiki, rootDomain, link ) {
         if ( link.tagName.toLowerCase() !== 'a' ) {
             return;
         }
@@ -350,7 +356,7 @@ export const RewriteUtil = {
             return;
         }
 
-        link.href = href.replace( `${wiki.oldId || wiki.id}.fandom.com`, `${wiki.id}.wiki.gg` );
+        link.href = href.replace( `${wiki.oldId || wiki.id}.${rootDomain}`, `${wiki.id}.wiki.gg` );
         // Defuse Google's hijacking protection - replacing with the new wiki's link will trigger it
         if ( link.getAttribute( 'data-jsarwt' ) ) {
             link.setAttribute( 'data-jsarwt', '0' );

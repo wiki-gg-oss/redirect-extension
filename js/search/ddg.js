@@ -65,10 +65,11 @@ class DdgSearchModule extends GenericSearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} _foundLinkElement
      */
-    async hideResult( wikiInfo, containerElement, _foundLinkElement ) {
+    async hideResult( wikiInfo, rootDomain, containerElement, _foundLinkElement ) {
         super.hideResult( wikiInfo, containerElement, _foundLinkElement );
     }
 
@@ -76,13 +77,14 @@ class DdgSearchModule extends GenericSearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} _foundLinkElement
      */
-    async replaceResult( wikiInfo, containerElement, _foundLinkElement ) {
+    async replaceResult( wikiInfo, rootDomain, containerElement, _foundLinkElement ) {
         // Rewrite anchor href links
         for ( const a of containerElement.getElementsByTagName( 'a' ) ) {
-            RewriteUtil.doLink( wikiInfo, a );
+            RewriteUtil.doLink( wikiInfo, rootDomain, a );
         }
 
         // Rewrite title and append a badge

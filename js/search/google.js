@@ -98,10 +98,11 @@ class GoogleSearchModule extends GenericSearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} _foundLinkElement
      */
-    async hideResult( wikiInfo, containerElement, _foundLinkElement ) {
+    async hideResult( wikiInfo, _rootDomain, containerElement, _foundLinkElement ) {
         super.hideResult( wikiInfo, containerElement, _foundLinkElement );
     }
 
@@ -109,11 +110,12 @@ class GoogleSearchModule extends GenericSearchModule {
     /**
      * @protected
      * @param {SiteRecord} wikiInfo
+     * @param {string} rootDomain
      * @param {HTMLElement} containerElement
      * @param {HTMLElement} _foundLinkElement
      */
-    async replaceResult( wikiInfo, containerElement, _foundLinkElement ) {
-        const oldDomain = `${wikiInfo.oldId || wikiInfo.id}.fandom.com`,
+    async replaceResult( wikiInfo, rootDomain, containerElement, _foundLinkElement ) {
+        const oldDomain = `${wikiInfo.oldId || wikiInfo.id}.${rootDomain}`,
             newDomain = `${wikiInfo.id}.wiki.gg`;
 
         const badgeElement = constructRedirectBadge( {
@@ -129,7 +131,7 @@ class GoogleSearchModule extends GenericSearchModule {
         }
         // Rewrite links
         for ( const subLinkElement of containerElement.querySelectorAll( this.EXTERNAL_LINK_SELECTOR ) ) {
-            RewriteUtil.doLink( wikiInfo, subLinkElement );
+            RewriteUtil.doLink( wikiInfo, rootDomain, subLinkElement );
         }
         // Rewrite title
         for ( const h3 of containerElement.querySelectorAll( this.RESULT_HEADING_SELECTOR ) ) {
@@ -142,7 +144,7 @@ class GoogleSearchModule extends GenericSearchModule {
         }
         // Rewrite translate link
         for ( const translate of containerElement.querySelectorAll( this.TRANSLATE_SELECTOR ) ) {
-            RewriteUtil.doLink( wikiInfo, translate );
+            RewriteUtil.doLink( wikiInfo, rootDomain, translate );
         }
         // Rewrite URL element
         if ( !this.#isMobile ) {
@@ -159,13 +161,13 @@ class GoogleSearchModule extends GenericSearchModule {
         }
         // Look for "More results from" in this result group and switch them onto wiki.gg
         for ( const moreResults of containerElement.querySelectorAll( this.MORE_FROM_NETWORK_SELECTOR ) ) {
-            moreResults.href = moreResults.href.replace( 'site:fandom.com', 'site:wiki.gg' )
-                .replace( `site:${wikiInfo.oldId || wikiInfo.id}.fandom.com`, `site:${wikiInfo.id}.wiki.gg` );
-            moreResults.innerText = moreResults.innerText.replace( 'fandom.com', 'wiki.gg' );
+            moreResults.href = moreResults.href.replace( `site:${rootDomain}`, 'site:wiki.gg' )
+                .replace( `site:${wikiInfo.oldId || wikiInfo.id}.${rootDomain}`, `site:${wikiInfo.id}.wiki.gg` );
+            moreResults.innerText = moreResults.innerText.replace( rootDomain, 'wiki.gg' );
         }
         // Rewrite new sitelinks boxes
         for ( const sitelink of containerElement.querySelectorAll( this.NEW_SITELINKS_SELECTOR ) ) {
-            RewriteUtil.doLink( wikiInfo, sitelink );
+            RewriteUtil.doLink( wikiInfo, rootDomain, sitelink );
         }
         // Hide the side-panel button - there's no point in attempting to rewrite it
         const sidePanelButton = containerElement.querySelector( this.RESULT_SIDEPANEL_SELECTOR );
