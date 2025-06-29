@@ -1,6 +1,7 @@
 import {
     createDomElement,
-    getMessage
+    getMessage,
+    isDevelopmentBuild
 } from "../util.js";
 
 
@@ -39,12 +40,39 @@ export default class SearchFilterSettings {
                     createDomElement( 'td', {
                         text: getMessage( `sfs_engine_${info.id}` ),
                     } ),
-                    this.#createRadioCell( `sfs_mode_${info.id}`, 'sfs_rewrite', `sfs.${info.id}.mode`, 'rewrite',
-                        false ),
-                    this.#createRadioCell( `sfs_mode_${info.id}`, 'sfs_filter', `sfs.${info.id}.mode`, 'filter',
-                        false ),
-                    this.#createRadioCell( `sfs_mode_${info.id}`, 'sfs_rewrite', `sfs.${info.id}.mode`, 'none',
-                        true ),
+                    createDomElement( 'select', {
+                        attributes: {
+                            name: `sfs_mode_${info.id}`,
+                            'data-component': 'DeclarativeSettings',
+                            'data-key': `sfs.${info.id}.mode`,
+                        },
+                        html: [
+                            createDomElement( 'option', {
+                                attributes: {
+                                    value: 'rewrite'
+                                },
+                                text: getMessage( 'sfs_rewrite' )
+                            } ),
+                            createDomElement( 'option', {
+                                attributes: {
+                                    value: 'filter'
+                                },
+                                text: getMessage( 'sfs_filter' )
+                            } ),
+                            ( isDevelopmentBuild() ? createDomElement( 'option', {
+                                attributes: {
+                                    value: 'disarm'
+                                },
+                                text: '[PH]' + getMessage( 'sfs_disarm' )
+                            } ) : '' ),
+                            createDomElement( 'option', {
+                                attributes: {
+                                    value: 'none'
+                                },
+                                text: getMessage( 'sfs_none' )
+                            } )
+                        ]
+                    } )
                 ],
                 appendTo: tbody
             } );

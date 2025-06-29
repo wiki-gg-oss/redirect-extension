@@ -1,0 +1,23 @@
+[ data-component="SearchFilterSettings" ] {
+    width: 100%;
+    
+    thead {
+        background: transparent;
+
+        th:first-child {
+            font-size: 0;
+        }
+
+        th {
+            font-size: 0.9em;
+        }
+    }
+
+    select {
+        width: 100%;
+        border: 1px solid var( --accent-colour );
+        border-radius: 4px;
+        background: color-mix( in srgb, var( --background-colour ), var( --text-colour ) 10% );
+        color: var( --text-colour );
+    }
+}

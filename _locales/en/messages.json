@@ -38,6 +38,12 @@
     "options_filtering": {
         "message": "Search filtering"
     },
+    "options_filtering_engine": {
+        "message": "Search engine"
+    },
+    "options_filtering_action": {
+        "message": "Action"
+    },
     "options_filtering_supported_engines": {
         "message": "Currently supported:"
     },
@@ -55,13 +61,13 @@
     },
 
     "sfs_filter": {
-        "message": "Filter results from old wikis."
+        "message": "Filter out"
     },
     "sfs_rewrite": {
-        "message": "Replace results from old wikis."
+        "message": "Replace"
     },
     "sfs_none": {
-        "message": "Do nothing."
+        "message": "Do nothing"
     },
     "sfs_engine_google": {
         "message": "Google"

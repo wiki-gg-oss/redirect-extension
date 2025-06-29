@@ -4,10 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title data-i18n="extension_name_dev"></title>
+        <!-- Stylesheets - Core -->
         <link rel="stylesheet" href="css/variables.css" type="text/css" />
         <link rel="stylesheet" href="css/core.css" type="text/css" />
         <link rel="stylesheet" href="css/popup.css" type="text/css" />
+        <!-- Stylesheets - Components -->
         <link rel="stylesheet" href="css/components/WikiList.css" type="text/css" />
+        <link rel="stylesheet" href="css/components/SearchFilterSettings.css" type="text/css" />
         <link rel="stylesheet" href="css/components/RuntimeListUpdates.css" type="text/css" />
     </head>
     <body>
@@ -50,10 +53,8 @@
                     <h5><img class="icon" src="icons/cdx/search.svg" /> <i18n>options_filtering</i18n></h5>
                     <table data-component="SearchFilterSettings">
                         <thead>
-                            <th></th>
-                            <th><span>Replace</span></th>
-                            <th><span>Filter</span></th>
-                            <th><span>Nothing</span></th>
+                            <th><i18n>options_filtering_engine</i18n></th>
+                            <th><i18n>options_filtering_action</i18n></th>
                         </thead>
                         <tbody>
                             <!-- This will be filled in by JavaScript -->
