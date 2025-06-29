@@ -27,25 +27,31 @@ body {
     display: none;
     align-items: stretch;
     gap: 0.2rem;
-    padding-bottom: 0.2rem;
-    border-bottom: 1px solid #fff3;
-}
-.tabber-header button {
-    appearance: none;
-    padding: 0.4em 1.2em;
-    background: transparent;
-    color: #fff;
-    border: 0;
-    border-radius: 2px;
-    font-size: 0.94em;
-    transition: background .2s;
-}
-.tabber-header button:not( .selected ):hover {
-    background: rgba( var(--accent-colour--rgb ), 0.3 );
-}
-.tabber-header button.selected {
-    background: rgba( var(--accent-colour--rgb ), 0.8 );
-    outline: 1px solid rgba( var(--accent-colour--rgb ), 1 );
+    border-bottom: 1px solid rgba( var( --accent-colour--rgb ), 0.5 );
+    margin-bottom: 0.2em;
+
+    button {
+        appearance: none;
+        padding: 0.4em 1.2em;
+        background: transparent;
+        color: var( --text-colour );
+        border: 0;
+        border-radius: 2px;
+        font-size: 0.94em;
+        transition: background .2s;
+
+        &:not( .selected ):hover {
+            background: rgba( var(--accent-colour--rgb ), 0.3 );
+        }
+
+        &.selected {
+            color: #fff;
+            background: rgba( var(--accent-colour--rgb ), 0.8 );
+            outline: 1px solid rgba( var(--accent-colour--rgb ), 1 );
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
 }
 .tabber > section:not( .selected ) {
     display: none;
