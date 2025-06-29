@@ -30,6 +30,7 @@ class GoogleSearchModule extends GenericSearchModule {
     TRANSLATE_SELECTOR = '.LAWljd + .fl[ping], .fl.iUh30';
     RESULT_SIDEPANEL_SELECTOR = 'div[jsslot] > div[jsname="I3kE2c"]';
     MORE_FROM_NETWORK_SELECTOR = 'a.fl[href*="site:fandom.com"]';
+    NEW_SITELINKS_SELECTOR = 'li.KTAFWb > a.dM1Yyd';
 
 
     /**
@@ -140,6 +141,10 @@ class GoogleSearchModule extends GenericSearchModule {
             moreResults.href = moreResults.href.replace( 'site:fandom.com', 'site:wiki.gg' )
                 .replace( `site:${wikiInfo.oldId || wikiInfo.id}.fandom.com`, `site:${wikiInfo.id}.wiki.gg` );
             moreResults.innerText = moreResults.innerText.replace( 'fandom.com', 'wiki.gg' );
+        }
+        // Rewrite new sitelinks boxes
+        for ( const sitelink of containerElement.querySelectorAll( this.NEW_SITELINKS_SELECTOR ) ) {
+            RewriteUtil.doLink( wikiInfo, sitelink );
         }
         // Hide the side-panel button - there's no point in attempting to rewrite it
         const sidePanelButton = containerElement.querySelector( this.RESULT_SIDEPANEL_SELECTOR );
