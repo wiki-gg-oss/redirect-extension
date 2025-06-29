@@ -61,7 +61,7 @@ class GoogleSearchModule extends GenericSearchModule {
     }
 
     initialise() {
-        this.#isMobile = !!document.querySelector( '#before-appbar' );
+        this.#isMobile = !!document.querySelector( '#navd' );
     }
 
 
