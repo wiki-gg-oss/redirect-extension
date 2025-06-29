@@ -128,4 +128,32 @@
     filter: var(--icon-filter);
     opacity: 0.5;
 }
-  
+
+@media screen and ( max-device-width: 900px ) {
+    .site-list-wrapper {
+        > .site-list {
+            max-height: clamp( 100px, 80vh, 700px );
+        }
+    }
+
+    .site-list__heading {
+        background: color-mix( in srgb, var( --background-colour ), var(--accent-colour) 8% );
+
+        &:not( :first-child ) {
+            margin-top: 8px;
+        }
+    }
+
+    .site-list__entry {
+        margin-top: 1px;
+
+        > label {
+            padding: 2px;
+        }
+
+        > input[ type="checkbox" ] {
+            height: 1.25em;
+            width: 1.25em;
+        }
+    }
+}
