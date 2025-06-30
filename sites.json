@@ -168,10 +168,6 @@
 		}
 	],
 	{
-		"id": "aground",
-		"name": "Aground"
-	},
-	{
 		"id": "airbornekingdom",
 		"name": "Airborne Kingdom"
 	},
@@ -292,6 +288,10 @@
 		}
 	},
 	{
+		"id": "bconomy",
+		"name": "Bconomy"
+	},
+	{
 		"id": "beforedarknessfalls",
 		"oldId": "before-darkness-falls",
 		"name": "Before Darkness Falls"
@@ -299,6 +299,10 @@
 	{
 		"id": "bendy",
 		"name": "Bendy"
+	},
+	{
+		"id": "bestiaryarena",
+		"name": "Bestiary Arena"
 	},
 	[
 		{
@@ -438,7 +442,8 @@
 	},
 	{
 		"id": "cavecrawlers",
-		"name": "Cave Crawlers"
+		"name": "Cave Crawlers",
+		"official": true
 	},
 	{
 		"id": "cavesroguelike",
@@ -599,6 +604,11 @@
 		"oldId": "darkage-bizarre",
 		"name": "DarkGarden Studios",
 		"official": true
+	},
+	{
+		"id": "dateeverything",
+		"oldId": "date-everything",
+		"name": "Date Everything"
 	},
 	[
 		{
@@ -767,6 +777,10 @@
 		"id": "drugdealersimulator2",
 		"oldId": "drug-dealer-simulator-2",
 		"name": "Drug Dealer Simulator 2"
+	},
+	{
+		"id": "expeditionintodarkness",
+		"name": "Expedition: Into Darkness"
 	},
 	{
 		"id": "dyinglight",
@@ -1012,6 +1026,18 @@
 		"name": "Gigantic"
 	},
 	{
+		"id": "grapevinegossip",
+		"name": "Grapevine Gossip"
+	},
+	{
+		"id": "greavesoyl",
+		"name": "Songs of Greavesoyl"
+	},
+	{
+		"id": "grimshire",
+		"name": "Grimshire"
+	},
+	{
 		"id": "gmce",
 		"oldId": "gm-ce",
 		"name": "Ghost Master: Complete Edition"
@@ -1198,6 +1224,10 @@
 		"official": true
 	},
 	{
+		"id": "ingress",
+		"name": "Ingress"
+	},
+	{
 		"id": "instarsandtime",
 		"oldId": "in-stars-and-time",
 		"name": "In Stars and Time"
@@ -1300,6 +1330,11 @@
 		"id": "liftlands",
 		"oldId": "liftlands",
 		"name": "Liftlands"
+	},
+	{
+		"id": "lightskies",
+		"name": "Lightskies",
+		"official": true
 	},
 	{
 		"id": "littlecornerteahouse",
@@ -1454,6 +1489,11 @@
 		"name": "Marvel Superheroes Mod"
 	},
 	{
+		"id": "mechat",
+		"name": "MeChat",
+		"official": true
+	},
+	{
 		"id": "mewgenics",
 		"name": "Mewgenics"
 	},
@@ -1567,8 +1607,7 @@
 	{
 		"id": "molten546",
 		"oldId": "crafters-caretaker-projects",
-		"name": "Molten546 Wiki",
-		"official": true
+		"name": "Molten546"
 	},
 	{
 		"id": "momodora",
@@ -1895,7 +1934,7 @@
 	{
 		"id": "racingvtuber",
 		"oldId": "racingvtuber-encyclopedia",
-		"name": "RacingVtuber Wiki"
+		"name": "RacingVtuber"
 	},
 	{
 		"id": "radiancemodding",
@@ -2180,6 +2219,10 @@
 		"name": "Spellrogue"
 	},
 	{
+		"id": "thestanleyparable",
+		"name": "The Stanley Parable"
+	},
+	{
 		"id": "starfighterinfinity",
 		"oldId": "starfighter-infinity",
 		"name": "Starfighter: Infinity",
@@ -2205,6 +2248,11 @@
 		"official": true
 	},
 	{
+		"id": "syntheticselection",
+		"oldId": "ss",
+		"name": "Synthetic Selection"
+	},
+	{
 		"id": "subnauticamodding",
 		"oldId": "subnautica-mods",
 		"name": "Subnautica Modding",
@@ -2228,6 +2276,10 @@
 		"official": true
 	},
 	{
+		"id": "sunkenland",
+		"name": "Sunkenland"
+	},
+	{
 		"id": "sunnyside",
 		"oldId": "sunnysidegame",
 		"name": "SunnySide",
@@ -2245,9 +2297,18 @@
 		"name": "Super Snail"
 	},
 	{
+		"id": "suzerain",
+		"name": "Suzerain"
+	},
+	{
 		"id": "swbf2frosty",
 		"oldId": "swbf2-frosty",
 		"name": "SWBF2 Frosty Editor Modding"
+	},
+	{
+		"id": "swirlingseasons",
+		"oldId": "tofrugs-swamp",
+		"name": "Swirling Seasons"
 	},
 	{
 		"id": "synthetikuniverse",
@@ -2271,6 +2332,10 @@
 		"name": "Totally Accurate Battle Simulator"
 	},
 	{
+		"id": "tacticus",
+		"name": "Warhammer 40.000: Tacticus"
+	},
+	{
 		"id": "tacotower",
 		"oldId": "taco-tower",
 		"name": "Taco Tower",
@@ -2280,6 +2345,11 @@
 		"id": "taintedgrail",
 		"oldId": "taintedgrail-thefallofavalon",
 		"name": "Tainted Grail: The Fall of Avalon"
+	},
+	{
+		"id": "talesofenaria",
+		"oldId": "tales-of-enaria",
+		"name": "The Tales of Enaria Project"
 	},
 	{
 		"id": "trailmakers",
