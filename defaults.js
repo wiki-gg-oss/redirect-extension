@@ -32,7 +32,8 @@ function createFreshSet() {
         useTabRedirect: true,
         useRuntimeLists: false,
         rtListLastSyncTime: 0,
-        ffUseOptimisedSearchCore: false,
+        // Feature flags
+        ffUseOptimisedSearchCore: true,
 
         // Legacy search engine settings - this should be migrated and dropped in 1.7.0
         searchMode: 'rewrite',
