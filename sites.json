@@ -432,8 +432,17 @@
 		"official": true
 	},
 	{
+		"id": "caretakerfp",
+		"oldId": "the-caretaker-fan-projects",
+		"name": "The Caretaker Fan Projects"
+	},
+	{
 		"id": "carrion",
 		"name": "Carrion"
+	},
+	{
+		"id": "carlyraejepsen",
+		"name": "Carly Rae Jepsen"
 	},
 	{
 		"id": "castledoombad",
@@ -648,6 +657,11 @@
 		"id": "deathbulge",
 		"name": "Deathbulge",
 		"official": true
+	},
+	{
+		"id": "deathendrequest",
+		"oldId": "death-end-request",
+		"name": "Death end re;Quest"
 	},
 	{
 		"id": "d2mc",
@@ -1068,6 +1082,10 @@
 		"name": "Grimms Notes"
 	},
 	{
+		"id": "grounded",
+		"name": "Grounded"
+	},
+	{
 		"id": "gtfo",
 		"name": "GTFO"
 	},
@@ -1193,6 +1211,10 @@
 		"official": true
 	},
 	{
+		"id": "idwtbamg",
+		"name": "Pretty Pretty Please I Don't Want to be a Magical Girl"
+	},
+	{
 		"id": "illusioncarnival",
 		"oldId": "illusion-carnival",
 		"name": "Illusion Carnival"
@@ -1231,6 +1253,11 @@
 		"id": "instarsandtime",
 		"oldId": "in-stars-and-time",
 		"name": "In Stars and Time"
+	},
+	{
+		"id": "intothelight",
+		"oldId": "into-the-light",
+		"name": "Into the Light"
 	},
 	{
 		"id": "intrusion",
@@ -1503,6 +1530,10 @@
 		"name": "Megido Abyss"
 	},
 	{
+		"id": "meowtower",
+		"name": "Meow Tower"
+	},
+	{
 		"id": "meridian59",
 		"oldId": "meridian-59",
 		"name": "Meridian 59"
@@ -1641,6 +1672,10 @@
 		"name": "Moonkitti's Stoneclan"
 	},
 	{
+		"id": "moshimonsters",
+		"name": "Moshi Monsters"
+	},
+	{
 		"id": "moshionline",
 		"name": "MOSHI ONLINE"
 	},
@@ -1660,6 +1695,10 @@
 	{
 		"id": "neutronized",
 		"name": "Neutronized"
+	},
+	{
+		"id": "newgrounds",
+		"name": "Newgrounds"
 	},
 	{
 		"id": "nightmarereaper",
@@ -1943,6 +1982,11 @@
 		"official": true
 	},
 	{
+		"id": "readyornot",
+		"oldId": "ready-or-not",
+		"name": "Ready or Not"
+	},
+	{
 		"id": "realspace4animation",
 		"oldId": "real-space-4-animation",
 		"name": "Real Space 4 Pivot Animation"
@@ -1974,6 +2018,11 @@
 			"oldId": "returntomoria"
 		}
 	],
+	{
+		"id": "rewinder",
+		"oldId": "the-rewinder-game",
+		"name": "Rewinder"
+	},
 	{
 		"id": "roboquest",
 		"name": "Roboquest"
@@ -2105,6 +2154,10 @@
 		"id": "scriptwelder",
 		"oldId": "dont-escape",
 		"name": "Scriptwelder"
+	},
+	{
+		"id": "scum",
+		"name": "SCUM"
 	},
 	{
 		"id": "seaofthieves",
@@ -2645,6 +2698,11 @@
 	{
 		"id": "undertaleyellow",
 		"name": "Undertale Yellow"
+	},
+	{
+		"id": "underthesand",
+		"oldId": "under-the-sand",
+		"name": "Under the Sand"
 	},
 	{
 		"id": "unturned",
