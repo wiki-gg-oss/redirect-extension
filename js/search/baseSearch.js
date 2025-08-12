@@ -35,6 +35,15 @@ export class SearchModule {
 
 
     /**
+     * @protected
+     * @return {boolean}
+     */
+    isPageSupported() {
+        return true;
+    }
+
+
+    /**
      * @abstract
      * @protected
      * @param {SiteRecord} wikiInfo
@@ -128,6 +137,10 @@ export class SearchModule {
 
             instance.initialise();
 
+            if ( !instance.isPageSupported() ) {
+                return;
+            }
+
             if ( useOptimisedLookups ) {
                 const domains = [ ...new Set( [
                     ...Object.values( wikiOrigins.farms ),
@@ -189,7 +202,10 @@ export class SearchModule {
                     }
 
                     const container = instance.resolveResultContainer( element );
-                    if ( container !== null && container.parentElement !== null && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE ) ) {
+                    if (
+                        container !== null && container.parentElement !== null
+                        && !container.getAttribute( SearchModule.MARKER_ATTRIBUTE )
+                    ) {
                         doRoutine.call( instance, wikiInfo, rawDomain, container, element );
                         container.setAttribute( SearchModule.MARKER_ATTRIBUTE, true );
                     }

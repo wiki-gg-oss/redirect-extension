@@ -66,6 +66,15 @@ class GoogleSearchModule extends GenericSearchModule {
 
 
     /**
+     * @protected
+     * @return {boolean}
+     */
+    isPageSupported() {
+        return !document.querySelector( '[data-attrid="images universal"]' );
+    }
+
+
+    /**
      * Finds a general result container for a given element, if any.
      *
      * @protected
