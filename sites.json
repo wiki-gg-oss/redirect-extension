@@ -1423,6 +1423,11 @@
 		"name": "Little-Known Galaxy"
 	},
 	{
+		"id": "lobotomycorporation",
+		"oldId": "lobotomycorp",
+		"name": "Lobotomy Corporation"
+	},
+	{
 		"id": "lordofembers",
 		"oldId": "the-lord-of-embers",
 		"name": "The Lord of Embers",
