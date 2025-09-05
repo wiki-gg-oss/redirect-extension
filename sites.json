@@ -189,10 +189,6 @@
 		"name": "APEX Racer"
 	},
 	{
-		"id": "appel",
-		"name": "Appel"
-	},
-	{
 		"id": "arknights",
 		"name": "Arknights"
 	},
@@ -211,7 +207,8 @@
 	},
 	{
 		"id": "astroneer",
-		"name": "Astroneer"
+		"name": "Astroneer",
+		"official": true
 	},
 	{
 		"id": "astrea",
@@ -485,7 +482,8 @@
 	},
 	{
 		"id": "changed",
-		"name": "Changed"
+		"name": "Changed",
+		"official": true
 	},
 	{
 		"id": "chiki",
@@ -622,7 +620,8 @@
 	{
 		"id": "dateeverything",
 		"oldId": "date-everything",
-		"name": "Date Everything"
+		"name": "Date Everything",
+		"official": true
 	},
 	[
 		{
@@ -656,7 +655,8 @@
 	},
 	{
 		"id": "deadlink",
-		"name": "Deadlink"
+		"name": "Deadlink",
+		"official": true
 	},
 	{
 		"id": "deathbulge",
@@ -1005,10 +1005,6 @@
 		"official": true
 	},
 	{
-		"id": "frackinuniverse",
-		"name": "Frackin' Universe"
-	},
-	{
 		"id": "fractured",
 		"name": "Fractured",
 		"official": true
@@ -1103,7 +1099,8 @@
 	},
 	{
 		"id": "gtfo",
-		"name": "GTFO"
+		"name": "GTFO",
+		"official": true
 	},
 	{
 		"id": "gttod",
@@ -1353,10 +1350,6 @@
 		"id": "leafblowerrevolution",
 		"oldId": "leaf-blower-revolution",
 		"name": "Leaf Blower Revolution"
-	},
-	{
-		"id": "ightskies",
-		"name": "Leafightskies"
 	},
 	[
 		{
@@ -1856,11 +1849,6 @@
 		"name": "The Pale Beyond"
 	},
 	{
-		"id": "paperlily",
-		"oldId": "paper-lily",
-		"name": "Paper Lily"
-	},
-	{
 		"id": "paperplanet",
 		"oldId": "paper-planet",
 		"name": "Paper Planet"
@@ -2186,6 +2174,11 @@
 		"name": "SAS: Zombie Assault"
 	},
 	{
+		"id": "satisfactory",
+		"name": "Satisfactory",
+		"official": true
+	},
+	{
 		"id": "sc2mapster",
 		"name": "SC2Mapster"
 	},
@@ -2200,14 +2193,13 @@
 		"official": true
 	},
 	{
-		"id": "satisfactory",
-		"name": "Satisfactory",
-		"official": true
-	},
-	{
 		"id": "scriptwelder",
 		"oldId": "dont-escape",
 		"name": "Scriptwelder"
+	},
+	{
+		"id": "scorn",
+		"name": "Scorn"
 	},
 	{
 		"id": "scum",
@@ -2227,10 +2219,6 @@
 			"oldId": "secrets-of-grindea"
 		}
 	],
-	{
-		"id": "scorn",
-		"name": "Scorn"
-	},
 	{
 		"id": "shadowsofabaddon",
 		"name": "Shadows of Abaddon",
@@ -2271,6 +2259,11 @@
 		"id": "smallandsurvivethewilds",
 		"oldId": "smalland-survive-the-wilds",
 		"name": "Smalland: Survive the Wilds"
+	},
+	{
+		"id": "smashlegends",
+		"oldId": "smash-legends",
+		"name": "Smash Legends"
 	},
 	{
 		"id": "smileforme",
@@ -2642,11 +2635,6 @@
 		"official": true
 	},
 	{
-		"id": "smashlegends",
-		"oldId": "smash-legends",
-		"name": "Smash Legends"
-	},
-	{
 		"id": "thespellbrigade",
 		"name": "The Spell Brigade"
 	},
@@ -2888,6 +2876,10 @@
 		},
 		{
 			"parentRef": "warcraft",
+			"oldId": "wowwiki"
+		},
+		{
+			"parentRef": "warcraft",
 			"oldId": "wow"
 		},
 		{
@@ -2932,9 +2924,9 @@
 		"name": "Worship"
 	},
 	{
-		"id": "worldofbabel",
+		"id": "mizara",
 		"oldId": "world-of-babel",
-		"name": "World of Babel"
+		"name": "Mizara"
 	},
 	{
 		"id": "wesleysroguelikedungeons",
