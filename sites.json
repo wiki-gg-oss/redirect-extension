@@ -455,6 +455,11 @@
 		"official": true
 	},
 	{
+		"id": "catsareliquid",
+		"oldId": "cats-are-liquid-game",
+		"name": "Cats are Liquid"
+	},
+	{
 		"id": "cavesroguelike",
 		"oldId": "caves-roguelike",
 		"name": "Caves (Roguelike)"
@@ -691,6 +696,11 @@
 		"id": "deepseahunter",
 		"name": "Deep Sea Hunter",
 		"oldId": "deep-sea-hunter"
+	},
+	{
+		"id": "demonsvsfairyland",
+		"oldId": "demons-vs-fairyland",
+		"name": "Demons vs Fairyland"
 	},
 	{
 		"id": "denshadego",
@@ -1021,6 +1031,12 @@
 		"name": "Galaxy on Fire"
 	},
 	{
+		"id": "gardenofhana",
+		"oldId": "garden-of-hana",
+		"name": "Garden of Hana",
+		"official": true
+	},
+	{
 		"id": "getawayshootout",
 		"oldId": "getaway-shootout",
 		"name": "Getaway Shootout"
@@ -1096,6 +1112,11 @@
 	{
 		"id": "guiltygear",
 		"name": "Guilty Gear"
+	},
+	{
+		"id": "hananezumi",
+		"oldId": "hananezumigame",
+		"name": "Hananezumi"
 	},
 	{
 		"id": "hawked",
@@ -1378,6 +1399,11 @@
 		"name": "Live a Live"
 	},
 	{
+		"id": "livlyislandnewedition",
+		"oldId": "livly-island-new-edition",
+		"name": "Livly Island (New Edition)"
+	},
+	{
 		"id": "legiontd2",
 		"name": "Legion TD 2"
 	},
@@ -1641,6 +1667,10 @@
 		"official": true
 	},
 	{
+		"id": "moekuri",
+		"name": "Moekuri"
+	},
+	{
 		"id": "molten546",
 		"oldId": "crafters-caretaker-projects",
 		"name": "Molten546"
@@ -1757,6 +1787,11 @@
 		"name": "Nox"
 	},
 	{
+		"id": "nuvguard",
+		"oldId": "nuvguard-heroes",
+		"name": "Nuvguard Heroes"
+	},
+	{
 		"id": "octohill",
 		"name": "Octohill Ski Tycoon",
 		"official": true
@@ -1792,6 +1827,10 @@
 		"id": "onehouronelife",
 		"name": "One Hour One Life",
 		"official": true
+	},
+	{
+		"id": "oneshot",
+		"name": "OneShot"
 	},
 	{
 		"id": "originrealms",
@@ -1971,6 +2010,11 @@
 		"official": true
 	},
 	{
+		"id": "pvzfusion",
+		"oldId": "pvz-fusion",
+		"name": "Plants vs. Zombies: Fusion"
+	},
+	{
 		"id": "quasimorph",
 		"name": "Quasimorph",
 		"official": true
@@ -2010,6 +2054,11 @@
 	{
 		"id": "rejuvenation",
 		"name": "Rejuvenation"
+	},
+	{
+		"id": "republicatwar",
+		"oldId": "republic-at-war",
+		"name": "Republic at War"
 	},
 	[
 		{
@@ -2355,6 +2404,16 @@
 		"name": "Super Snail"
 	},
 	{
+		"id": "sulfur",
+		"name": "SULFUR",
+		"official": true
+	},
+	{
+		"id": "surroundead",
+		"name": "SurrounDead",
+		"official": true
+	},
+	{
 		"id": "suzerain",
 		"name": "Suzerain"
 	},
@@ -2592,16 +2651,6 @@
 		"name": "The Spell Brigade"
 	},
 	{
-		"id": "sulfur",
-		"name": "SULFUR",
-		"official": true
-	},
-	{
-		"id": "surroundead",
-		"name": "SurrounDead",
-		"official": true
-	},
-	{
 		"id": "thecrust",
 		"oldId": "the-crust",
 		"name": "The Crust"
@@ -2684,6 +2733,10 @@
 		"oldId": "tsuki-odyssey",
 		"name": "Tsuki's Odyssey",
 		"official": true
+	},
+	{
+		"id": "twice",
+		"name": "TWICE"
 	},
 	{
 		"id": "twistedwonderland",
