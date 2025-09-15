@@ -366,6 +366,11 @@
 		"name": "Bloobs Adventure Idle"
 	},
 	{
+		"id": "blueprince",
+		"oldId": "blue-prince",
+		"name": "Blue Prince"
+	},
+	{
 		"id": "boomslingers",
 		"oldId": "boom-slingers",
 		"name": "Boom Slingers"
