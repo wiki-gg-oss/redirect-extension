@@ -239,6 +239,11 @@
 		"name": "Astral Party"
 	},
 	{
+		"id": "automobilista2",
+		"oldId": "automobilista-2",
+		"name": "Automobilista 2"
+	},
+	{
 		"id": "backpackbattles",
 		"oldId": "backpack-battles",
 		"name": "Backpack Battles"
@@ -1099,6 +1104,11 @@
 		"name": "Grimms Notes"
 	},
 	{
+		"id": "grossicinematicuniverse",
+		"oldId": "grossi-cinematic-universe",
+		"name": "Grossi Cinematic Universe"
+	},
+	{
 		"id": "grounded",
 		"name": "Grounded"
 	},
@@ -1247,6 +1257,11 @@
 		"oldId": "immortal-life",
 		"name": "Immortal Life",
 		"official": true
+	},
+	{
+		"id": "inbirth",
+		"oldId": "in-birth",
+		"name": "UNDER NIGHT IN-BIRTH"
 	},
 	{
 		"id": "inconvenientmodpack",
@@ -1966,6 +1981,10 @@
 		"name": "Project Malice"
 	},
 	{
+		"id": "projectmoon",
+		"name": "Project Moon"
+	},
+	{
 		"id": "projectwingman",
 		"name": "Project Wingman"
 	},
@@ -2332,6 +2351,11 @@
 		"oldId": "starfighter-infinity",
 		"name": "Starfighter: Infinity",
 		"official": true
+	},
+	{
+		"id": "starripedia",
+		"oldId": "starripedia",
+		"name": "Starripedia"
 	},
 	{
 		"id": "starsector",
