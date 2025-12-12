@@ -67,6 +67,10 @@
 		"official": true
 	},
 	{
+		"id": "9kings",
+		"name": "9 Kings"
+	},
+	{
 		"id": "acecombat",
 		"name": "Ace Combat",
 		"official": true,
@@ -258,6 +262,11 @@
 		"name": "Bake.gg"
 	},
 	{
+		"id": "ballxpit",
+		"oldId": "ballpit",
+		"name": "BALL x PIT"
+	},
+	{
 		"id": "bananapedia",
 		"oldId": "supermonkeyball",
 		"name": "Bananapedia",
@@ -348,6 +357,11 @@
 		"name": "The Black Reliquary"
 	},
 	{
+		"id": "bladeandsorcery",
+		"oldId": "blade-and-sorcery",
+		"name": "Blade & Sorcery"
+	},
+	{
 		"id": "bleed",
 		"oldId": "bleed-game",
 		"name": "Bleed"
@@ -359,6 +373,11 @@
 		"search": {
 			"oldName": "BlockFrontMC"
 		}
+	},
+	{
+		"id": "blockstory",
+		"oldId": "block-story",
+		"name": "Block Story"
 	},
 	{
 		"id": "blocknload2",
@@ -494,6 +513,11 @@
 		"id": "changed",
 		"name": "Changed",
 		"official": true
+	},
+	{
+		"id": "charismahouse",
+		"oldId": "charisma-house",
+		"name": "Charisma House"
 	},
 	{
 		"id": "chiki",
@@ -690,8 +714,17 @@
 		}
 	},
 	{
+		"id": "deckofhaunts",
+		"oldId": "deck-of-haunts",
+		"name": "Deck of Haunts"
+	},
+	{
 		"id": "derailvalley",
 		"name": "Derail Valley"
+	},
+	{
+		"id": "dreamwild",
+		"name": "DreamWild"
 	},
 	{
 		"id": "dredge",
@@ -730,6 +763,11 @@
 	{
 		"id": "disfigure",
 		"name": "Disfigure"
+	},
+	{
+		"id": "dmcpoc",
+		"oldId": "dmc-poc",
+		"name": "Devil May Cry: Peak of Combat"
 	},
 	{
 		"id": "dotage",
@@ -1345,9 +1383,19 @@
 		"name": "Karmaslayers"
 	},
 	{
+		"id": "kerectus",
+		"oldId": "kerectusportal",
+		"name": "Kerectus"
+	},
+	{
 		"id": "kingdomcomedeliverance",
 		"oldId": "kingdom-come-deliverance",
 		"name": "Kingdom Come: Deliverance"
+	},
+	{
+		"id": "kitatcho",
+		"oldId": "kitatcho-labs",
+		"name": "The Kitatcho Laboratories"
 	},
 	{
 		"id": "kuroshitsuji",
@@ -1401,6 +1449,10 @@
 	{
 		"id": "littlekingsstory",
 		"name": "Little King's Story"
+	},
+	{
+		"id": "littlewitchinthewoods",
+		"name": "Little Witch in the Woods"
 	},
 	{
 		"id": "livealive",
@@ -1484,6 +1536,11 @@
 		"official": true
 	},
 	{
+		"id": "kaijuno8",
+		"oldId": "kaiju-no-8",
+		"name": "Kaiju No. 8"
+	},
+	{
 		"id": "karmazoo",
 		"name": "KarmaZoo",
 		"official": true
@@ -1563,6 +1620,11 @@
 	{
 		"id": "mewgenics",
 		"name": "Mewgenics"
+	},
+	{
+		"id": "megamanhq",
+		"oldId": "megaman",
+		"name": "Mega Man HQ"
 	},
 	{
 		"id": "megidoabyss",
@@ -1921,6 +1983,11 @@
 		}
 	},
 	{
+		"id": "phantompeak",
+		"oldId": "phantom-peak",
+		"name": "Phantom Peak"
+	},
+	{
 		"id": "pico",
 		"name": "Pico"
 	},
@@ -2010,6 +2077,12 @@
 	{
 		"id": "powerrangerslegacywars",
 		"name": "Power Rangers: Legacy Wars"
+	},
+	{
+		"id": "powerwashsimulator",
+		"oldId": "powerwash-simulator",
+		"name": "PowerWash Simulator",
+		"official": true
 	},
 	{
 		"id": "punchclub",
@@ -2173,6 +2246,11 @@
 		"id": "rumble",
 		"name": "RUMBLE",
 		"official": true
+	},
+	{
+		"id": "saintomancer",
+		"oldId": "saintess-summons-skeletons",
+		"name": "Saintess Summons Skeletons"
 	},
 	{
 		"id": "samuraigunn2",
@@ -2660,6 +2738,10 @@
 		"official": true
 	},
 	{
+		"id": "thatlevelagain",
+		"name": "That Level Again"
+	},
+	{
 		"id": "thespellbrigade",
 		"name": "The Spell Brigade"
 	},
@@ -2737,6 +2819,11 @@
 			"oldId": "trucksim"
 		}
 	],
+	{
+		"id": "travellersrest",
+		"oldId": "travellers-rest",
+		"name": "Traveller's Rest"
+	},
 	{
 		"id": "tridedash",
 		"name": "Tride Dash"
