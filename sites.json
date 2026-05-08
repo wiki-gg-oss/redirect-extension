@@ -631,11 +631,6 @@
 		"name": "Continental War Server"
 	},
 	{
-		"id": "darza",
-		"oldId": "darzas",
-		"name": "Darza's Dominion"
-	},
-	{
 		"id": "darkdeity",
 		"name": "Dark Deity",
 		"official": true
@@ -1484,11 +1479,6 @@
 		"search": {
 			"oldName": "Level Zero: Extraction"
 		}
-	},
-	{
-		"id": "lifeinadventure",
-		"oldId": "life-in-adventure",
-		"name": "Life In Adventure"
 	},
 	{
 		"id": "lifemakeover",
